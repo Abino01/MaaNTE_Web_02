@@ -112,6 +112,7 @@ export function genNavigationComponents(
     return { navbar: [], collections: [] }
   }
 
+  const locale = path.basename(baseDir)
   const entries = fs.readdirSync(baseDir, { withFileTypes: true }).filter((e) => !e.name.startsWith('.'))
 
   for (const entry of entries) {
@@ -125,7 +126,7 @@ export function genNavigationComponents(
     const navbarItem: ThemeNavItem = {
       text: metaData.title,
       icon: metaData.icon,
-      link: `/zh_cn/${metaData.baseName}/`,
+      link: `/${locale}/${metaData.baseName}/`,
     }
 
     const collectionItem: ThemeCollectionItem = {
