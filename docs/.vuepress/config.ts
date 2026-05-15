@@ -11,6 +11,14 @@ export default defineUserConfig({
   title: 'MaaNTE 文档站',
   description: 'MaaNTE | MAA 异环小助手',
 
+  locales: {
+    '/zh_cn/': {
+      lang: 'zh-CN',
+      title: 'MaaNTE 文档站',
+      description: 'MaaNTE | MAA 异环小助手',
+    },
+  },
+
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: 'images/logo_32x32.png' }],
   ],
@@ -35,7 +43,12 @@ export default defineUserConfig({
       title: false,
     },
 
-    collections: navigationComponents.collections,
+    locales: {
+      '/zh_cn/': {
+        navbar: navigationComponents.navbar,
+        collections: navigationComponents.collections,
+      },
+    },
 
     watermark: false,
 

@@ -132,8 +132,8 @@ export function genNavigationComponents(
     const collectionItem: ThemeCollectionItem = {
       type: 'doc',
       title: metaData.title,
-      dir: `${locale}/${metaData.baseName}`,
-      linkPrefix: `/${locale}/${metaData.baseName}/`,
+      dir: metaData.baseName,
+      linkPrefix: `/${metaData.baseName}/`,
       sidebar: getSidebarItems(path.join(baseDir, entry.name)),
     }
 
