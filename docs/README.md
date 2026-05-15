@@ -14,6 +14,9 @@ config:
         - text: 快速开始
           link: /zh_cn/introduction/
           type: primary
+        - text: 开始下载
+          link: https://github.com/1bananachicken/MaaNTE/releases
+          type: primary
         - text: GitHub
           link: https://github.com/1bananachicken/MaaNTE
           type: secondary
