@@ -19,7 +19,7 @@ export default defineUserConfig({
   shouldPrefetch: false,
 
   theme: plumeTheme({
-    hostname: 'https://maa-nte.github.io/MaaNTE-Web',
+    hostname: 'https://maa-nte.github.io',
 
     docsRepo: '1bananachicken/MaaNTE',
     docsDir: '/docs',
