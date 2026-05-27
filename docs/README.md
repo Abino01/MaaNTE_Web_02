@@ -27,7 +27,7 @@ config:
         icon: mdi:fish
       - title: 音频闪避与反击
         details: 基于音频识别的实时闪避系统。监听游戏音效，自动触发闪避和反击操作，让战斗更加从容
-        icon: mdi:shield-lightning
+        icon: ⚡
       - title: 超强音
         details: 自动演奏音游「超强音」，支持自动选曲、连续演奏和帧率调节。轻松获取音游奖励
         icon: mdi:music-circle
