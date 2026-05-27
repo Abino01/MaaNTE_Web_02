@@ -19,7 +19,7 @@ MaaNTE provides a rich set of automation features to simplify repetitive tasks i
 | Real-Time Assist | Auto skip dialogue, auto teleport | No |
 | Auto Coffee | Automated coffee-making mini-game loop | No |
 | Fountain Check-in | Daily fountain check-in automation | No |
-| Pink Paw Heist | Auto complete Pink Paw Heist event | No |
+| Pink Paw Heist | Automatically complete the Pink Paw Heist event | No |
 | Claim Rewards | Auto claim various rewards | No |
 | Withdraw Money | Auto withdraw money | No |
 | Auto Piano | Auto play piano | No |
