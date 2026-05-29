@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29T19:23:06.900Z",
+  "updated_at": "2026-05-29T20:43:08.516Z",
   "member_limit": 2000,
   "selected_group_id": "1101147419",
   "groups": [
@@ -7,17 +7,8 @@
       "ok": true,
       "group_id": "1101147419",
       "group_name": "MaaNTE交流群②群",
-      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=QX-Q1oE4s9usXeHIivUBq0EzSe0JZo6r&authKey=2hr0K7%2BNgJfqzSTEmXuRYfxoVg2ws6%2BA5d2WKP%2FJuKEkqVf3QDfSbtlp381XDVpA&noverify=0&group_code=1101147419",
-      "member_count": 1846,
-      "max_member_count": 2000,
-      "joinable": true
-    },
-    {
-      "ok": true,
-      "group_id": "1103323319",
-      "group_name": "MaaNTE交流群①群",
-      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=zft4Oo8_j2hOCCNMVmflAnaGUQbP64KE&authKey=qovXMHGHgrdFYsyW%2BjkCrbcPAgc4lwkQpA2dbWcxBA%2BcZNpQO8oyR6ckdwtCGct3&noverify=0&group_code=1103323319",
-      "member_count": 1877,
+      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=mO5yJtx0lG_YCMKDXt5wFD4fl0pAGpMq&authKey=zfvEb9M3IeRY35SJIdeaRS4Vqmgs9APt22EDRtv8XFrmwGwzxu%2F1Vt8eC9alfNuD&noverify=0&group_code=1101147419",
+      "member_count": 1852,
       "max_member_count": 2000,
       "joinable": true
     },
@@ -25,8 +16,17 @@
       "ok": true,
       "group_id": "1075143235",
       "group_name": "MaaNTE交流群③群",
-      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=sDsPUZ6tuIps0OfW2aZCuUFL87DThqG3&authKey=4HnelgJYnrjX8m4KgY1NMRhisuMLhVQHG49Uidynr5I3dKCnY6uZwRHNOm55yu1z&noverify=0&group_code=1075143235",
-      "member_count": 1881,
+      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=RwsGhem1LI430E-5lMLeozVKBESoXliI&authKey=0o5jOhcCo4P6HaNLCCzm9Jx%2FfvhUMqp633azCfdvdDA5b8A0rR1Ds0n1UFMW%2F639&noverify=0&group_code=1075143235",
+      "member_count": 1880,
+      "max_member_count": 2000,
+      "joinable": true
+    },
+    {
+      "ok": true,
+      "group_id": "1103323319",
+      "group_name": "MaaNTE交流群①群",
+      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=6irotO8W913EQBguy4iqRqgSjEEJqnBX&authKey=aUJYpFgS9IstgouP24VtBa%2BmWxzV4Fld7q75a1Ld%2FX6v3rIr3ExVmsn%2FKFrAhPnl&noverify=0&group_code=1103323319",
+      "member_count": 1891,
       "max_member_count": 2000,
       "joinable": true
     },
@@ -34,8 +34,8 @@
       "ok": true,
       "group_id": "713114598",
       "group_name": "MaaNTE交流群④群",
-      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=7htSZkKMA2258OBR3eoReFQGwZ_DPDU_&authKey=KM5KyIL73jyFaX2TDntmsveXoQNF%2FCVEjZArljI8IH4WPiXbKQ81sP8o7rZGLuqn&noverify=0&group_code=713114598",
-      "member_count": 1937,
+      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=EIHinaJHY447fYyhfl25kk0r806UAPYt&authKey=BEuVaRI7jDQFZ9nZiaZV%2BxcPHDnDQ32i%2B1XBXl%2FexwPO5ky6axWWp%2FLXRyf22%2Fs7&noverify=0&group_code=713114598",
+      "member_count": 1939,
       "max_member_count": 2000,
       "joinable": true
     },
@@ -43,9 +43,10 @@
       "ok": true,
       "group_id": "1106448578",
       "group_name": "MaaNTE交流群⑤群",
-      "member_count": 1944,
+      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=nPbkioqu1cqIU8rQk98hx5FTBaFMuV0U&authKey=0N86uvM3Ft9CI%2FVlWNlWZLSc3xwe4JiPzQpulGBrE9RU8WqwaZifPi5CzTe7n%2FvQ&noverify=0&group_code=1106448578",
+      "member_count": 1957,
       "max_member_count": 2000,
-      "joinable": false
+      "joinable": true
     }
   ]
 }
