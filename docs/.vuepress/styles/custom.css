@@ -54,13 +54,13 @@
   transform: translateX(4px);
 }
 
-/* 悬停下载按钮或任一子按钮时，两个子按钮同时出现 */
-.vp-home-hero .action:has(> .vp-button:nth-child(2):is(:hover, :focus-visible)) > .vp-button:nth-child(3),
-.vp-home-hero .action:has(> .vp-button:nth-child(2):is(:hover, :focus-visible)) > .vp-button:nth-child(4),
-.vp-home-hero .action:has(> .vp-button:nth-child(3):is(:hover, :focus-visible)) > .vp-button:nth-child(3),
-.vp-home-hero .action:has(> .vp-button:nth-child(3):is(:hover, :focus-visible)) > .vp-button:nth-child(4),
-.vp-home-hero .action:has(> .vp-button:nth-child(4):is(:hover, :focus-visible)) > .vp-button:nth-child(3),
-.vp-home-hero .action:has(> .vp-button:nth-child(4):is(:hover, :focus-visible)) > .vp-button:nth-child(4) {
+/* 下载按钮 hover / click（focus）或悬停子按钮时，二级按钮同时出现 */
+.vp-home-hero .action:has(> .vp-button:nth-child(2):is(:hover, :focus, :focus-visible)) > .vp-button:nth-child(3),
+.vp-home-hero .action:has(> .vp-button:nth-child(2):is(:hover, :focus, :focus-visible)) > .vp-button:nth-child(4),
+.vp-home-hero .action:has(> .vp-button:nth-child(3):is(:hover, :focus, :focus-visible)) > .vp-button:nth-child(3),
+.vp-home-hero .action:has(> .vp-button:nth-child(3):is(:hover, :focus, :focus-visible)) > .vp-button:nth-child(4),
+.vp-home-hero .action:has(> .vp-button:nth-child(4):is(:hover, :focus, :focus-visible)) > .vp-button:nth-child(3),
+.vp-home-hero .action:has(> .vp-button:nth-child(4):is(:hover, :focus, :focus-visible)) > .vp-button:nth-child(4) {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
