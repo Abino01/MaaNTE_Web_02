@@ -6,5 +6,8 @@ export default defineClientConfig({
     import('./components/Redirect.vue').then((module) => {
       app.component('Redirect', module.default)
     })
+    import('./components/QQGroupJoin.vue').then((module) => {
+      app.component('QQGroupJoin', module.default)
+    })
   },
 })

@@ -4,6 +4,8 @@ on:
   repository_dispatch:
     types: [md_changes]
   workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
   push:
     branches:
       - main
@@ -34,11 +36,11 @@ jobs:
 
       - name: Sync docs from MaaNTE
         run: |
-          cp MaaNTE-temp/docs/README.md docs/README.md || true
           rsync -av --delete \
             --exclude='/README.md' \
             --exclude='/introduction/README.md' \
             --exclude='/develop/README.md' \
+            --exclude='/qq-group/' \
             MaaNTE-temp/docs/zh_cn/ docs/zh_cn/
 
       - name: Setup pnpm
@@ -55,6 +57,9 @@ jobs:
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Update QQ group link
+        run: pnpm run qq-group:update
 
       - name: Build with VuePress
         run: pnpm run docs:build
