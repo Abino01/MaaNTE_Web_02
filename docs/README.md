@@ -36,6 +36,21 @@ config:
         - text: GitHub
           link: https://github.com/1bananachicken/MaaNTE
           type: primary
+  - type: HomeIntro
+    items:
+      - title: 框架先进，稳定无忧
+        content: MaaNTE 基于 <strong>MaaFramework</strong> 开发，通过图像识别与模拟输入技术实现功能。<br>区别于传统脚本录制，不会出现录制脚本的"意外退出界面导致被花光资源"惨案。
+        align: left
+        # link:
+        #   href: ""
+        #   text: 警钟长鸣 →
+        #   alt: 警钟长鸣
+      - title: 开源工具，代码安全
+        content: MaaNTE 以 <strong>AGPL-3.0</strong> 开源，源码均在 GitHub 发布。<br>区别于闭源项目的不确定性，我们的每一行代码都经过审查，接受任何人随时监督。
+        align: right
+      - title: 社区驱动，功能丰富
+        content: <strong>任何人</strong>均能提交代码，为 MaaNTE 添加新的功能。<br>我们拥有数十项已经添加到正式版的功能，覆盖日常任务、都市闲趣等多个方面。
+        align: left
   - type: features
     features:
       - title: 自动钓鱼
