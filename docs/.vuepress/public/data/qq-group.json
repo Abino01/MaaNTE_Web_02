@@ -1,7 +1,79 @@
 {
-  "updated_at": null,
+  "updated_at": "2026-05-29T13:22:17.222Z",
   "member_limit": 2000,
-  "selected_group_id": null,
-  "selected": null,
-  "groups": []
+  "selected_group_id": "1101147419",
+  "selected": {
+    "ok": true,
+    "group_id": "1101147419",
+    "group_name": "MaaNTE交流群②群",
+    "avatar_url": "https://p.qlogo.cn/gh/1101147419/1101147419/640",
+    "description": "在这里，发现更多~",
+    "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=pX-Zzu1M7Hl9U2PkveHwtRN51bIkoENY&authKey=kHU%2FYqYmWu2f1s0x6EWrmqhEHmTJsi7QzEoOh0XBGjXBkCFfd1neaKC2Y8qGTRL5&noverify=0&group_code=1101147419",
+    "last_updated": "2026-05-29T21:22:15.665011853+08:00",
+    "member_count": 1826,
+    "max_member_count": 2000,
+    "joinable": true
+  },
+  "groups": [
+    {
+      "ok": true,
+      "group_id": "1101147419",
+      "group_name": "MaaNTE交流群②群",
+      "avatar_url": "https://p.qlogo.cn/gh/1101147419/1101147419/640",
+      "description": "在这里，发现更多~",
+      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=pX-Zzu1M7Hl9U2PkveHwtRN51bIkoENY&authKey=kHU%2FYqYmWu2f1s0x6EWrmqhEHmTJsi7QzEoOh0XBGjXBkCFfd1neaKC2Y8qGTRL5&noverify=0&group_code=1101147419",
+      "last_updated": "2026-05-29T21:22:15.665011853+08:00",
+      "member_count": 1826,
+      "max_member_count": 2000,
+      "joinable": true
+    },
+    {
+      "ok": true,
+      "group_id": "1103323319",
+      "group_name": "MaaNTE交流群①群",
+      "avatar_url": "https://p.qlogo.cn/gh/1103323319/1103323319/640",
+      "description": "MaaNTE异环助手交流群",
+      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=-EDdxR6al7uViKkOGStUmtASNdFZ5Lqw&authKey=cTZ63DU%2BItPqr04H%2B8hvy2RTQSpH7IobbJtNRiWbPmKcvfJrYnpXsQvujOA0PZaf&noverify=0&group_code=1103323319",
+      "last_updated": "2026-05-29T21:22:16.122282517+08:00",
+      "member_count": 1867,
+      "max_member_count": 2000,
+      "joinable": true
+    },
+    {
+      "ok": true,
+      "group_id": "1075143235",
+      "group_name": "MaaNTE交流群③群",
+      "avatar_url": "https://p.qlogo.cn/gh/1075143235/1075143235/640",
+      "description": "在这里，发现更多~",
+      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=UMJDrqe6tch2O6OytaEMmNmISWxYd4EU&authKey=DO9UpR1yltoK9XTyWYCQkgeqzLuCWuS7r76zTI%2B5zm4IzfpYHKRTlp0ss3wxB1Tb&noverify=0&group_code=1075143235",
+      "last_updated": "2026-05-29T21:22:16.62730864+08:00",
+      "member_count": 1881,
+      "max_member_count": 2000,
+      "joinable": true
+    },
+    {
+      "ok": true,
+      "group_id": "713114598",
+      "group_name": "MaaNTE交流群④群",
+      "avatar_url": "https://p.qlogo.cn/gh/713114598/713114598/640",
+      "description": "在这里，发现更多~",
+      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=3u1rZMz4WPmHjoQNkJ7OhCxNbSI9oNwv&authKey=AFWcCGm5%2FPHci3HgIoWOnAPk9aeE%2FLOZshw1l75VOIrbV1ULUwUBfFgea0K%2FwDCr&noverify=0&group_code=713114598",
+      "last_updated": "2026-05-29T21:22:16.658288136+08:00",
+      "member_count": 1923,
+      "max_member_count": 2000,
+      "joinable": true
+    },
+    {
+      "ok": true,
+      "group_id": "1106448578",
+      "group_name": "MaaNTE交流群⑤群",
+      "avatar_url": "https://p.qlogo.cn/gh/1106448578/1106448578/640",
+      "description": "在这里，发现更多~",
+      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=BGc-OUraNFOMQ0oS_36cFe9TwiPSpBFA&authKey=0iccSgg%2FEGQdZcNLi0vzxzqrAtxBzVT3RZfdG028fXmExoDhSVEE5oD13C666cbS&noverify=0&group_code=1106448578",
+      "last_updated": "2026-05-29T21:22:15.52663873+08:00",
+      "member_count": 1944,
+      "max_member_count": 2000,
+      "joinable": true
+    }
+  ]
 }
