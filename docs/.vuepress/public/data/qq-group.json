@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29T19:05:42.084Z",
+  "updated_at": "2026-05-29T19:23:06.900Z",
   "member_limit": 2000,
   "selected_group_id": "1101147419",
   "groups": [
@@ -43,10 +43,9 @@
       "ok": true,
       "group_id": "1106448578",
       "group_name": "MaaNTE交流群⑤群",
-      "join_url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=raoZZKY8DspfiEpjXj5LkGIAOEE0iW_l&authKey=y7wkZyi1Fs2pEphebx2tEFEVqB%2Bj7%2FxPgZOie%2FrJXIoqGh%2FPdyXCoQ7oJlgEBSRq&noverify=0&group_code=1106448578",
-      "member_count": 1956,
+      "member_count": 1944,
       "max_member_count": 2000,
-      "joinable": true
+      "joinable": false
     }
   ]
 }
