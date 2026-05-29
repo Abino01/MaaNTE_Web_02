@@ -24,6 +24,10 @@ env:
 
 jobs:
   build:
+    if: >
+      github.event_name != 'repository_dispatch' ||
+      github.event.client_payload.source_branch == '' ||
+      github.event.client_payload.source_branch == env.MAANTE_UPSTREAM_DOCS_BRANCH
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
