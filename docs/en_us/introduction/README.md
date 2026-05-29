@@ -7,23 +7,23 @@ index: true
 
 # Introduction
 
-MaaNTE provides a rich set of automation features to simplify repetitive tasks in *Neverness to Everness*.
+MaaNTE offers a comprehensive automation toolkit for *Neverness to Everness*, helping you cut down repetitive in-game actions.
 
 ## Feature Overview
 
-| Feature | Description | Foreground Required |
+| Feature | Description | Requires Foreground |
 |---------|-------------|---------------------|
-| Auto Fishing | Automated fishing with selling and bait purchase | No |
-| Sound Dodge & Counter | Real-time audio-based dodge and counter-attack | Yes (Desktop) |
-| Rhythm Game | Auto-play rhythm mini-game with song selection | No |
-| Real-Time Assist | Auto skip dialogue, auto teleport | No |
-| Auto Coffee | Automated coffee-making mini-game loop | No |
-| Fountain Check-in | Daily fountain check-in automation | No |
-| Pink Paw Heist | Automatically complete the Pink Paw Heist event | No |
-| Claim Rewards | Auto claim various rewards | No |
-| Withdraw Money | Auto withdraw money | No |
-| Auto Piano | Auto play piano | No |
-| Auto Scroll | Auto scroll pages | No |
+| Auto Fishing | Repeats fishing automatically and supports auto-selling fish and buying bait | No |
+| Audio Dodge & Counter | Performs real-time dodge and counter actions through audio cues | Yes (Desktop in foreground) |
+| Rhythm Assist | Automates rhythm gameplay with track selection and repeated taps | No |
+| Real-Time Assist | Handles auto dialogue skip and auto teleport | Yes (Desktop in foreground) |
+| Auto Coffee | Repeats the coffee-making mini-game in a loop | No |
+| Fountain Check-In | Automatically completes the daily fountain check-in | Yes (Desktop in foreground) |
+| Pink Paw Grand Heist | Automatically runs the Pink Paw Grand Heist event | Yes (Desktop in foreground) |
+| Claim Rewards | Collects available rewards automatically | Yes (Desktop in foreground) |
+| Oneka Cafe Revenue | Collects Oneka Cafe revenue and can optionally restock | Yes (Desktop in foreground) |
+| Auto Piano | Plays piano automatically | No |
+| Fast Loot Pickup | Holds `F` and scrolls the mouse wheel for rapid item pickup | No |
 
 ## Quick Start
 
@@ -32,6 +32,6 @@ MaaNTE provides a rich set of automation features to simplify repetitive tasks i
 3. Select desired tasks from the task list
 4. Start and enjoy automation!
 
-For detailed setup instructions, refer to the upstream [README](https://github.com/1bananachicken/MaaNTE).
+For detailed installation and configuration steps, see the upstream [README](https://github.com/1bananachicken/MaaNTE).
 
 Having issues? Check [Troubleshooting](/en_us/trouble_shooting.html) and [FAQ](/en_us/develop/faq.html).
