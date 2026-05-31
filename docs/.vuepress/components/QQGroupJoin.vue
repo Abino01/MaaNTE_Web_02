@@ -115,7 +115,6 @@ function formatGroupName(group: QQGroup): string {
         <a class="qq-group__button" :href="selectedGroup.join_url" target="_blank" rel="noopener noreferrer">
           加入 QQ 群
         </a>
-        <p class="qq-group__hint">系统会自动推荐 5 个群里人数最少且低于 {{ memberLimit }} 人的群。</p>
       </div>
     </div>
 
