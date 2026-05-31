@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-31T09:47:10.538Z",
+  "updated_at": "2026-05-31T10:35:33.189Z",
   "member_limit": 2000,
   "selected_group_id": "423431800",
   "groups": [
@@ -49,7 +49,7 @@
       "group_name": "MaaNTE交流群④群",
       "member_count": 2000,
       "max_member_count": 2000,
-      "joinable": false
+      "joinable": true
     }
   ]
 }
