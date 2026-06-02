@@ -1,4 +1,4 @@
----
+<img width="760" height="280" alt="image" src="https://github.com/user-attachments/assets/2a434645-d2e6-4d13-bb5c-4b56457c1e0b" />---
 home: true
 title: MaaNTE
 topAlert:
@@ -38,7 +38,7 @@ config:
           link: https://pan.baidu.com/s/11QMC-aYfjfq52yco_UAwfg?pwd=tkmu
           type: secondary
         - text: 夸克网盘
-          link: https://pan.quark.cn/s/b690fe93838b?pwd=PtXy
+          link: https://pan.quark.cn/s/4b70d06b913c?pwd=irqh
           type: secondary
         - text: 加入 QQ 群
           link: /zh_cn/qq-group/
