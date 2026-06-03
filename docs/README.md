@@ -1,6 +1,16 @@
 ---
 home: true
 title: MaaNTE
+topAlert:
+  enabled: true
+  label: 提醒
+  text: 请仅从官方渠道下载 MaaNTE。谨防第三方改包、引流群、假仓库和付费代下骗局。
+  speed: 28
+  backgroundColor: "#7f1d1d"
+  textColor: "#fff7ed"
+  borderColor: "rgba(255, 255, 255, 0.22)"
+  badgeBackgroundColor: "#fef08a"
+  badgeTextColor: "#7f1d1d"
 config:
   - type: hero
     full: true
@@ -28,7 +38,7 @@ config:
           link: https://pan.baidu.com/s/11QMC-aYfjfq52yco_UAwfg?pwd=tkmu
           type: secondary
         - text: 夸克网盘
-          link: https://pan.quark.cn/s/9eb393a6c95e?pwd=8nuf
+          link: https://pan.quark.cn/s/4b70d06b913c?pwd=irqh
           type: secondary
         - text: 加入 QQ 群
           link: /zh_cn/qq-group/
@@ -101,5 +111,5 @@ config:
   <LinkCard icon="fa7-brands:github" title="GitHub" href="https://github.com/1bananachicken/MaaNTE/" />
   <LinkCard icon="fa7-brands:bilibili" title="Bilibili" href="https://space.bilibili.com/3546893080594665/" />
   <LinkCard icon="fa7-brands:qq" title="QQ" href="/zh_cn/qq-group/" />
-  <LinkCard icon="fa7-brands:discord" title="Discord" href="https://discord.gg/EjwrrGzy/" />
+  <LinkCard icon="fa7-brands:discord" title="Discord" href="https://discord.com/invite/e6mPMRYQpR" />
 </CardGrid>

@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { withBase } from 'vuepress/client'
 
 interface QQGroup {
   group_id: string
   group_name?: string
-  join_url?: string
   member_count?: number
   max_member_count?: number
   ok?: boolean
@@ -23,6 +22,15 @@ interface QQGroupData {
 const loading = ref(true)
 const errorMessage = ref('')
 const groupData = ref<QQGroupData | null>(null)
+const copiedGroupId = ref('')
+const copyErrorGroupId = ref('')
+let resetCopyFeedbackTimer: ReturnType<typeof setTimeout> | undefined
+
+onBeforeUnmount(() => {
+  clearCopyFeedbackTimer()
+  copiedGroupId.value = ''
+  copyErrorGroupId.value = ''
+})
 
 const groups = computed(() => groupData.value?.groups ?? [])
 const selectedGroup = computed(() => {
@@ -72,18 +80,96 @@ function formatCount(value?: number): string {
   return typeof value === 'number' && Number.isFinite(value) ? value.toLocaleString('zh-CN') : '未知'
 }
 
-function isJoinable(group: QQGroup): boolean {
-  return group.joinable === true
+function hasMemberCount(group: QQGroup): boolean {
+  return typeof group.member_count === 'number' && Number.isFinite(group.member_count)
+}
+
+function formatGroupMemberCount(group: QQGroup): string {
+  if (!hasMemberCount(group)) return '未知'
+
+  const maxMemberCount = group.max_member_count ?? memberLimit.value
+  return `${group.member_count}/${maxMemberCount}`
+}
+
+function hasFewRemainingSlots(group: QQGroup): boolean {
+  if (!hasMemberCount(group)) return false
+
+  const maxMemberCount = group.max_member_count ?? memberLimit.value
+  return maxMemberCount - group.member_count! < 50
 }
 
 function formatGroupName(group: QQGroup): string {
   return group.group_name || `QQ群 ${group.group_id}`
 }
+
+async function copyGroupId(groupId: string): Promise<void> {
+  try {
+    await copyText(groupId)
+    copiedGroupId.value = groupId
+    copyErrorGroupId.value = ''
+  } catch {
+    copiedGroupId.value = ''
+    copyErrorGroupId.value = groupId
+  }
+
+  clearCopyFeedbackTimer()
+  resetCopyFeedbackTimer = setTimeout(() => {
+    copiedGroupId.value = ''
+    copyErrorGroupId.value = ''
+    resetCopyFeedbackTimer = undefined
+  }, 2000)
+}
+
+function clearCopyFeedbackTimer(): void {
+  if (resetCopyFeedbackTimer === undefined) return
+
+  clearTimeout(resetCopyFeedbackTimer)
+  resetCopyFeedbackTimer = undefined
+}
+
+async function copyText(value: string): Promise<void> {
+  if (navigator.clipboard?.writeText) {
+    try {
+      await navigator.clipboard.writeText(value)
+      return
+    } catch {
+      // Fall back for browsers that expose the Clipboard API but deny access.
+    }
+  }
+
+  copyTextWithFallback(value)
+}
+
+function copyTextWithFallback(value: string): void {
+  if (typeof document.execCommand !== 'function') {
+    throw new Error('Clipboard API is not supported')
+  }
+
+  const textarea = document.createElement('textarea')
+  textarea.value = value
+  textarea.style.position = 'fixed'
+  textarea.style.opacity = '0'
+  document.body.appendChild(textarea)
+  textarea.select()
+
+  const copied = document.execCommand('copy')
+  textarea.remove()
+
+  if (!copied) {
+    throw new Error('Copy failed')
+  }
+}
+
+function copyButtonLabel(groupId: string): string {
+  if (copiedGroupId.value === groupId) return '已复制'
+  if (copyErrorGroupId.value === groupId) return '复制失败'
+  return '复制群号'
+}
 </script>
 
 <template>
   <section class="qq-group">
-    <div v-if="loading" class="qq-group__state">正在获取 QQ 群链接...</div>
+    <div v-if="loading" class="qq-group__state">正在获取 QQ 群信息...</div>
 
     <div v-else-if="!selectedGroup" class="qq-group__empty">
       <h2>暂时没有可加入的 QQ 群</h2>
@@ -112,10 +198,9 @@ function formatGroupName(group: QQGroup): string {
           </div>
         </dl>
 
-        <a class="qq-group__button" :href="selectedGroup.join_url" target="_blank" rel="noopener noreferrer">
-          加入 QQ 群
-        </a>
-        <p class="qq-group__hint">系统会自动推荐 5 个群里人数最少且低于 {{ memberLimit }} 人的群。</p>
+        <button class="qq-group__button" type="button" @click="copyGroupId(selectedGroup.group_id)">
+          {{ copyButtonLabel(selectedGroup.group_id) }}
+        </button>
       </div>
     </div>
 
@@ -125,10 +210,20 @@ function formatGroupName(group: QQGroup): string {
         <li v-for="group in groups" :key="group.group_id">
           <span>
             {{ formatGroupName(group) }}
-            <small>QQ群 {{ group.group_id }}</small>
+            <small>{{ group.group_id }}</small>
           </span>
-          <strong v-if="isJoinable(group)">{{ formatCount(group.member_count) }} 人</strong>
-          <em v-else>{{ group.error || '已满或不可加入' }}</em>
+          <span class="qq-group__details-actions">
+            <strong
+              v-if="hasMemberCount(group)"
+              :class="{ 'qq-group__details-count--warning': hasFewRemainingSlots(group) }"
+            >
+              {{ formatGroupMemberCount(group) }}
+            </strong>
+            <em v-else>{{ group.error || '已满或不可加入' }}</em>
+            <button type="button" @click="copyGroupId(group.group_id)">
+              {{ copyButtonLabel(group.group_id) }}
+            </button>
+          </span>
         </li>
       </ul>
     </details>
@@ -208,8 +303,11 @@ function formatGroupName(group: QQGroup): string {
   min-height: 40px;
   padding: 0 18px;
   border-radius: 8px;
+  border: 0;
   background: var(--vp-c-brand-1);
   color: var(--vp-c-white);
+  cursor: pointer;
+  font: inherit;
   font-weight: 700;
   text-decoration: none;
 }
@@ -262,10 +360,37 @@ function formatGroupName(group: QQGroup): string {
   white-space: nowrap;
 }
 
+.qq-group__details-count--warning {
+  color: var(--vp-c-danger-1) !important;
+}
+
 .qq-group__details em {
   color: var(--vp-c-text-3);
   font-style: normal;
   white-space: nowrap;
+}
+
+.qq-group__details-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.qq-group__details-actions button {
+  padding: 3px 10px;
+  border: 1px solid var(--vp-c-brand-1);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--vp-c-brand-1);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.qq-group__details-actions button:hover {
+  background: var(--vp-c-brand-soft);
 }
 
 @media (max-width: 640px) {
@@ -287,8 +412,11 @@ function formatGroupName(group: QQGroup): string {
 
   .qq-group__details strong,
   .qq-group__details em {
-    display: block;
-    margin-top: 4px;
+    margin-top: 0;
+  }
+
+  .qq-group__details-actions {
+    margin-top: 6px;
   }
 }
 </style>
