@@ -25,6 +25,9 @@ config:
         - text: 快速开始
           link: /zh_cn/introduction/
           type: primary
+        - text: 游戏地图
+          link: https://map.maante.org/
+          type: primary
         - text: 下载
           type: primary
           children:
