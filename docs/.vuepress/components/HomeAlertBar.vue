@@ -94,7 +94,10 @@ watchEffect(() => {
 
 <style scoped>
 .home-alert-bar {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: calc(var(--vp-z-index-nav) + 1);
   box-sizing: border-box;
   width: 100%;
