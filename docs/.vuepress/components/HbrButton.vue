@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { VPButton } from 'vuepress-theme-plume/client'
 
 interface ChildAction {
@@ -10,6 +11,7 @@ interface ChildAction {
   suffixIcon?: string
   target?: string
   rel?: string
+  children?: ChildAction[]
 }
 
 interface Props {
@@ -34,17 +36,19 @@ function resolveTheme(t?: 'brand' | 'alt' | 'sponsor', type?: 'primary' | 'secon
   if (type === 'secondary') return 'alt'
   return 'brand'
 }
+
+const resolvedTheme = computed(() => resolveTheme(props.theme, props.type))
 </script>
 
 <template>
   <div
     class="hbr-btn"
-    :class="{ 'has-children': children && children.length > 0 }"
+    :class="{ 'has-children': children && children.length > 0, 'is-secondary': resolvedTheme === 'alt' }"
   >
     <VPButton
       v-bind="link ? { tag: 'a', href: link, target, rel } : {}"
       :size="size"
-      :theme="resolveTheme(theme, type)"
+      :theme="resolvedTheme"
       :text="text"
       :icon="icon"
       :suffix-icon="suffixIcon"
@@ -53,15 +57,11 @@ function resolveTheme(t?: 'brand' | 'alt' | 'sponsor', type?: 'primary' | 'secon
       v-if="children && children.length > 0"
       class="hbr-btn-sub"
     >
-      <VPButton
+      <HbrButton
         v-for="child in children"
         :key="child.text"
-        v-bind="child.link ? { tag: 'a', href: child.link, target: child.target, rel: child.rel } : {}"
+        v-bind="child"
         size="medium"
-        :theme="resolveTheme(child.theme, child.type)"
-        :text="child.text"
-        :icon="child.icon"
-        :suffix-icon="child.suffixIcon"
       />
     </div>
   </div>
@@ -75,12 +75,12 @@ function resolveTheme(t?: 'brand' | 'alt' | 'sponsor', type?: 'primary' | 'secon
 
 /* Frosted glass + inner glow base style — 复用 hero name 的渐变色调 */
 .hbr-btn :deep(.vp-button) {
-  margin-left: 0;
+  margin: 0;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(96, 165, 250, 0.22);
+  border: 2px solid rgba(96, 165, 250, 0.22);
   box-shadow:
     inset 0 1px 0 rgba(96, 165, 250, 0.15),
     0 0 14px rgba(168, 85, 247, 0.12),
@@ -108,15 +108,34 @@ function resolveTheme(t?: 'brand' | 'alt' | 'sponsor', type?: 'primary' | 'secon
     0 0 8px rgba(168, 85, 247, 0.08);
 }
 
-/* Sub-buttons: positioned above the parent, centered horizontally */
+/* Secondary: subtler than primary, but still visible with a clean outline */
+.hbr-btn.is-secondary :deep(.vp-button) {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(96, 165, 250, 0.18);
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.hbr-btn.is-secondary :deep(.vp-button:hover) {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(96, 165, 250, 0.30);
+  box-shadow:
+    0 0 12px rgba(168, 85, 247, 0.10);
+  text-shadow: 0 0 8px rgba(168, 85, 247, 0.20);
+}
+
+/* Sub-buttons: floating above parent, centered, wraps on narrow viewports */
 .hbr-btn-sub {
   position: absolute;
   bottom: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
-  white-space: nowrap;
+  width: max-content;
+  max-width: calc(100vw - 16px);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -132,12 +151,21 @@ function resolveTheme(t?: 'brand' | 'alt' | 'sponsor', type?: 'primary' | 'secon
   height: 10px;
 }
 
-.hbr-btn:hover .hbr-btn-sub,
-.hbr-btn:focus-within .hbr-btn-sub {
+.hbr-btn:hover > .hbr-btn-sub,
+.hbr-btn:focus-within > .hbr-btn-sub {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transition: opacity 0.15s, visibility 0s 0s;
+}
+
+/* Narrow screens: anchor from left edge to avoid centering overflow */
+@media (max-width: 480px) {
+  .hbr-btn-sub {
+    left: 8px;
+    transform: none;
+    justify-content: flex-start;
+  }
 }
 
 .hbr-btn-sub :deep(.vp-button) {

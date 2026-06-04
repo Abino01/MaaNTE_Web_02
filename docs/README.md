@@ -23,12 +23,15 @@ config:
         alt: MaaNTE Logo
       actions:
         - text: 快速开始
+          icon: mdi:file-document-outline
           link: /zh_cn/introduction/
           type: primary
-        - text: 游戏地图
+        - text: 在线地图
+          icon: fa7-solid:map-location-dot
           link: https://map.maante.org/
           type: primary
         - text: 下载
+          icon: fa7-solid:download
           type: primary
           children:
             - text: GitHub 下载
@@ -37,18 +40,34 @@ config:
             - text: Mirror酱 下载
               link: https://mirrorchan.com/zh/projects?rid=MaaNTE
               type: secondary
-            - text: 百度网盘
-              link: https://pan.baidu.com/s/11QMC-aYfjfq52yco_UAwfg?pwd=tkmu
+            - text: 网盘下载
               type: secondary
-            - text: 夸克网盘
-              link: https://pan.quark.cn/s/4b70d06b913c?pwd=irqh
+              children:
+              - text: 百度网盘
+                link: https://pan.baidu.com/s/11QMC-aYfjfq52yco_UAwfg?pwd=tkmu
+                type: secondary
+              - text: 夸克网盘
+                link: https://pan.quark.cn/s/4b70d06b913c?pwd=irqh
+                type: secondary
+        - text: 联系我们
+          icon: fa7-solid:external-link-alt
+          type: primary
+          children:
+            - text: QQ 群
+              link: /zh_cn/qq-group/
               type: secondary
-        - text: 加入 QQ 群
-          link: /zh_cn/qq-group/
-          type: primary
-        - text: GitHub
-          link: https://github.com/1bananachicken/MaaNTE
-          type: primary
+            - text: Discord
+              link: https://discord.com/invite/e6mPMRYQpR
+              type: secondary
+        - text: 更多
+          icon: heroicons:ellipsis-horizontal-circle-16-solid
+          children:
+            - text: GitHub
+              link: https://github.com/1bananachicken/MaaNTE
+              type: primary
+            - text: Bilibili
+              link: https://space.bilibili.com/3546893080594665/
+              type: primary
   - type: HomeIntro
     items:
       - title: 框架先进，稳定无忧
