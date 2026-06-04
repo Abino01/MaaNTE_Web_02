@@ -1,6 +1,80 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import { withBase } from 'vuepress/client'
+import { useData, withBase } from 'vuepress/client'
+
+const { routeLocale } = useData()
+
+type Locale = 'zh' | 'en' | 'ja'
+
+const currentLocale = computed<Locale>(() => {
+  const lp = routeLocale.value
+  if (lp.startsWith('/en_us')) return 'en'
+  if (lp.startsWith('/ja_jp')) return 'ja'
+  return 'zh'
+})
+
+const t = computed(() => {
+  const strings: Record<Locale, Record<string, string>> = {
+    zh: {
+      loading: '正在获取 QQ 群信息...',
+      waitingFirstSync: '等待首次更新',
+      unknown: '未知',
+      unknownError: '未知错误',
+      noGroupsTitle: '暂时没有可加入的 QQ 群',
+      noGroupsMsg: (limit: number) => `当前没有人数低于 ${limit} 的群，或群信息还未完成同步。请稍后再试。`,
+      lastSync: '最近同步',
+      groupId: '群号',
+      memberCount: '当前人数',
+      copyGroupId: '复制群号',
+      copied: '已复制',
+      copyFailed: '复制失败',
+      viewAllGroups: '查看全部群状态',
+      fullOrUnavailable: '已满或不可加入',
+      groupName: (id: string) => `QQ群 ${id}`,
+      dateLocale: 'zh-CN',
+      numberLocale: 'zh-CN',
+    },
+    en: {
+      loading: 'Fetching QQ group info...',
+      waitingFirstSync: 'Waiting for first sync',
+      unknown: 'Unknown',
+      unknownError: 'Unknown error',
+      noGroupsTitle: 'No QQ groups available',
+      noGroupsMsg: (limit: number) => `No groups with fewer than ${limit} members available, or group data has not synced yet. Please try again later.`,
+      lastSync: 'Last Sync',
+      groupId: 'Group ID',
+      memberCount: 'Members',
+      copyGroupId: 'Copy Group ID',
+      copied: 'Copied',
+      copyFailed: 'Copy Failed',
+      viewAllGroups: 'View All Groups',
+      fullOrUnavailable: 'Full or Unavailable',
+      groupName: (id: string) => `QQ Group ${id}`,
+      dateLocale: 'en-US',
+      numberLocale: 'en-US',
+    },
+    ja: {
+      loading: 'QQ グループ情報を取得中...',
+      waitingFirstSync: '初回同期待ち',
+      unknown: '不明',
+      unknownError: '不明なエラー',
+      noGroupsTitle: '現在参加可能な QQ グループはありません',
+      noGroupsMsg: (limit: number) => `現在、人数が ${limit} 未満のグループがないか、グループ情報の同期が完了していません。しばらくしてからもう一度お試しください。`,
+      lastSync: '最終同期',
+      groupId: 'グループID',
+      memberCount: '現在の人数',
+      copyGroupId: 'グループIDをコピー',
+      copied: 'コピー済み',
+      copyFailed: 'コピー失敗',
+      viewAllGroups: '全グループの状態を表示',
+      fullOrUnavailable: '満員または参加不可',
+      groupName: (id: string) => `QQグループ ${id}`,
+      dateLocale: 'ja-JP',
+      numberLocale: 'ja-JP',
+    },
+  }
+  return strings[currentLocale.value]
+})
 
 interface QQGroup {
   group_id: string
@@ -41,7 +115,7 @@ const memberLimit = computed(() => groupData.value?.member_limit ?? 2000)
 
 const updatedAt = computed(() => {
   const value = groupData.value?.updated_at
-  return value ? formatDate(value) : '等待首次更新'
+  return value ? formatDate(value) : t.value.waitingFirstSync
 })
 
 onMounted(async () => {
@@ -57,7 +131,7 @@ onMounted(async () => {
 
     groupData.value = await response.json()
   } catch (error) {
-    errorMessage.value = error instanceof Error ? error.message : '未知错误'
+    errorMessage.value = error instanceof Error ? error.message : t.value.unknownError
   } finally {
     loading.value = false
   }
@@ -67,7 +141,7 @@ function formatDate(value: string): string {
   const date = new Date(value)
   if (Number.isNaN(date.getTime())) return value
 
-  return new Intl.DateTimeFormat('zh-CN', {
+  return new Intl.DateTimeFormat(t.value.dateLocale, {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
@@ -77,7 +151,7 @@ function formatDate(value: string): string {
 }
 
 function formatCount(value?: number): string {
-  return typeof value === 'number' && Number.isFinite(value) ? value.toLocaleString('zh-CN') : '未知'
+  return typeof value === 'number' && Number.isFinite(value) ? value.toLocaleString(t.value.numberLocale) : t.value.unknown
 }
 
 function hasMemberCount(group: QQGroup): boolean {
@@ -85,7 +159,7 @@ function hasMemberCount(group: QQGroup): boolean {
 }
 
 function formatGroupMemberCount(group: QQGroup): string {
-  if (!hasMemberCount(group)) return '未知'
+  if (!hasMemberCount(group)) return t.value.unknown
 
   const maxMemberCount = group.max_member_count ?? memberLimit.value
   return `${group.member_count}/${maxMemberCount}`
@@ -99,7 +173,7 @@ function hasFewRemainingSlots(group: QQGroup): boolean {
 }
 
 function formatGroupName(group: QQGroup): string {
-  return group.group_name || `QQ群 ${group.group_id}`
+  return group.group_name || t.value.groupName(group.group_id)
 }
 
 async function copyGroupId(groupId: string): Promise<void> {
@@ -161,22 +235,22 @@ function copyTextWithFallback(value: string): void {
 }
 
 function copyButtonLabel(groupId: string): string {
-  if (copiedGroupId.value === groupId) return '已复制'
-  if (copyErrorGroupId.value === groupId) return '复制失败'
-  return '复制群号'
+  if (copiedGroupId.value === groupId) return t.value.copied
+  if (copyErrorGroupId.value === groupId) return t.value.copyFailed
+  return t.value.copyGroupId
 }
 </script>
 
 <template>
   <section class="qq-group">
-    <div v-if="loading" class="qq-group__state">正在获取 QQ 群信息...</div>
+    <div v-if="loading" class="qq-group__state">{{ t.loading }}</div>
 
     <div v-else-if="!selectedGroup" class="qq-group__empty">
-      <h2>暂时没有可加入的 QQ 群</h2>
+      <h2>{{ t.noGroupsTitle }}</h2>
       <p>
-        {{ errorMessage || `当前没有人数低于 ${memberLimit} 的群，或群信息还未完成同步。请稍后再试。` }}
+        {{ errorMessage || t.noGroupsMsg(memberLimit) }}
       </p>
-      <p class="qq-group__meta">最近同步：{{ updatedAt }}</p>
+      <p class="qq-group__meta">{{ t.lastSync }}：{{ updatedAt }}</p>
     </div>
 
     <div v-else class="qq-group__content">
@@ -185,15 +259,15 @@ function copyButtonLabel(groupId: string): string {
 
         <dl class="qq-group__stats">
           <div>
-            <dt>群号</dt>
+            <dt>{{ t.groupId }}</dt>
             <dd>{{ selectedGroup.group_id }}</dd>
           </div>
           <div>
-            <dt>当前人数</dt>
+            <dt>{{ t.memberCount }}</dt>
             <dd>{{ formatCount(selectedGroup.member_count) }} / {{ formatCount(selectedGroup.max_member_count) }}</dd>
           </div>
           <div>
-            <dt>最近同步</dt>
+            <dt>{{ t.lastSync }}</dt>
             <dd>{{ updatedAt }}</dd>
           </div>
         </dl>
@@ -205,7 +279,7 @@ function copyButtonLabel(groupId: string): string {
     </div>
 
     <details v-if="groups.length > 1" class="qq-group__details">
-      <summary>查看全部群状态</summary>
+      <summary>{{ t.viewAllGroups }}</summary>
       <ul>
         <li v-for="group in groups" :key="group.group_id">
           <span>
@@ -219,7 +293,7 @@ function copyButtonLabel(groupId: string): string {
             >
               {{ formatGroupMemberCount(group) }}
             </strong>
-            <em v-else>{{ group.error || '已满或不可加入' }}</em>
+            <em v-else>{{ group.error || t.fullOrUnavailable }}</em>
             <button type="button" @click="copyGroupId(group.group_id)">
               {{ copyButtonLabel(group.group_id) }}
             </button>

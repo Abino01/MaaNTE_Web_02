@@ -15,7 +15,14 @@ interface TopAlertConfig {
   badgeTextColor?: string
 }
 
-const { frontmatter } = useData()
+const { frontmatter, routeLocale } = useData()
+
+const i18n = computed(() => {
+  const lp = routeLocale.value
+  if (lp.startsWith('/en_us')) return { label: 'Warning', ariaLabel: 'Site Notice' }
+  if (lp.startsWith('/ja_jp')) return { label: '注意', ariaLabel: 'サイト通知' }
+  return { label: '警告', ariaLabel: '站点通知' }
+})
 
 const homePage = computed(() => frontmatter.value.pageLayout === 'home')
 
@@ -36,7 +43,7 @@ const enabled = computed(() => {
 
 const text = computed(() => topAlert.value?.text?.trim() ?? '')
 const link = computed(() => topAlert.value?.link?.trim() ?? '')
-const label = computed(() => topAlert.value?.label?.trim() || '警告')
+const label = computed(() => topAlert.value?.label?.trim() || i18n.value.label)
 const duration = computed(() => {
   const speed = Number(topAlert.value?.speed)
   return Number.isFinite(speed) && speed > 0 ? `${speed}s` : '26s'
@@ -67,7 +74,7 @@ watchEffect(() => {
     :style="barStyle"
     role="status"
     aria-live="polite"
-    aria-label="站点通知"
+    :aria-label="i18n.ariaLabel"
   >
     <div class="home-alert-bar__inner">
       <div class="home-alert-bar__track" :style="{ '--home-alert-duration': duration }">

@@ -42,6 +42,7 @@ export function genThemeLocales(): LocaleConfig<ThemeLocaleData> {
     }
 
     themeLocales[`/${locale.name}/`] = {
+      home: `/${locale.name}/`,
       navbar: navigationComponents.navbar,
       collections: navigationComponents.collections,
       footer: footer[locale.name],
@@ -50,6 +51,7 @@ export function genThemeLocales(): LocaleConfig<ThemeLocaleData> {
   // 为根路径 / 添加中文 locale，使首页导航栏能显示语言切换按钮
   themeLocales['/'] = {
     ...themeLocales['/zh_cn/'],
+    home: '/',
   }
   return themeLocales
 }
