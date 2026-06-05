@@ -102,12 +102,13 @@ const actions = computed<HeroAction[]>(() => heroData.value.actions ?? [])
 }
 
 .hero-content {
-  width: max-content;
+  width: 100%;
   max-width: 960px;
   padding: 0 20px;
   margin: 0 auto;
   text-align: center;
   pointer-events: none;
+  box-sizing: border-box;
 }
 
 .hhero.full .hero-container .hero-content {
@@ -156,6 +157,25 @@ const actions = computed<HeroAction[]>(() => heroData.value.actions ?? [])
   justify-content: center;
   margin: 30px 0 0;
   pointer-events: auto;
+}
+
+@media (max-width: 480px) {
+  .hero-name,
+  .hero-tagline {
+    font-size: 32px;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+  }
+
+  .hero-text {
+    font-size: 15px;
+    overflow-wrap: break-word;
+  }
+
+  .actions {
+    gap: 10px 16px;
+    margin-top: 22px;
+  }
 }
 
 @media (min-width: 768px) {
