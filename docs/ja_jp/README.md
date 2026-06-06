@@ -62,6 +62,9 @@ config:
             - text: Bilibili
               link: https://space.bilibili.com/3546893080594665/
               type: primary
+            - text: Afdian
+              link: https://afdian.com/a/MaaNTE
+              type: primary
   - type: HomeIntro
     items:
       - title: 先進的フレームワーク、安心の安定性
