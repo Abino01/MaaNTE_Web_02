@@ -66,8 +66,10 @@ defineProps<{
   font-size: 36px;
   font-weight: 700;
   width: fit-content;
+  max-width: 100%;
   margin: 0 0 16px;
   padding: 5px;
+  overflow-wrap: break-word;
   background: var(--vp-bg-home-hero-name, linear-gradient(315deg, var(--vp-c-purple-1) 15%, var(--vp-c-brand-2) 65%, var(--vp-c-brand-2) 100%));
   background-clip: text;
   -webkit-background-clip: text;
@@ -92,5 +94,16 @@ defineProps<{
   color: var(--vp-c-brand);
   font-weight: 500;
   text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .home-intro-title {
+    font-size: 26px;
+  }
+
+  .home-intro-text {
+    font-size: 15px;
+    padding: 0 5px;
+  }
 }
 </style>
