@@ -71,6 +71,9 @@ config:
             - text: Bilibili
               link: https://space.bilibili.com/3546893080594665/
               type: primary
+            - text: 爱发电
+              link: https://afdian.com/a/MaaNTE
+              type: primary
             - text: YouTube
               link: https://youtube.com/@MaaNTE-Official
               type: primary
