@@ -20,53 +20,54 @@ title: 翻译术语表
 
     | 键 | 简体中文 | 繁体中文 | English | 日本語 |
     | --- | --- | --- | --- | --- |
-    | controller_default_label | 桌面端-默认 | - | - | - |
-    | controller_front_label | 桌面端-前台 | - | - | - |
-    | controller_background_label | 桌面端-后台 | - | - | - |
+    | controller_default_label | 桌面端-默认 | 桌面端-默認 | Win32 - Default | デスクトップ - デフォルト |
+    | controller_front_label | 桌面端-前台 | 桌面端-前台 | Win32 - Front | デスクトップ - フォアグラウンド |
+    | controller_background_label | 桌面端-后台 | 桌面端-後台 | Win32 - Background | デスクトップ - バックグラウンド |
 
 - :+ MaaNTE 任务分类
 
     | 键 | 简体中文 | 繁体中文 | English | 日本語 |
     | --- | --- | --- | --- | --- |
-    | group.Daily.label | 日常任务 | - | Daily | - |
-    | group.RealTimeAssist.label | 实时辅助 | - | RealTimeAssist | - |
-    | group.CityTycoon.label | 都市大亨 | - | CityTycoon | - |
-    | group.HethereauHobbies.label | 都市闲趣 | - | HethereauHobbies | - |
+    | group.Daily.label | 日常任务 | 日常任務 | Daily | 日常タスク |
+    | group.RealTimeAssist.label | 实时辅助 | 實時輔助 | RealTimeAssist | リアルタイム支援 |
+    | group.CityTycoon.label | 都市大亨 | 都市大亨 | CityTycoon | シティ名声 |
+    | group.HethereauHobbies.label | 都市闲趣 | 都市閒趣 | HethereauHobbies | シティライフ |
     | - | 其它功能 | - | others | - |
-    | group.DatasetCollection.label | 数据收集 | - | DatasetCollection | - |
+    | group.DatasetCollection.label | 数据收集 | 數據集收集 | DatasetCollection | データセットコレクション |
 
 - MaaNTE 任务预设
 
     | 键 | 简体中文 | 繁体中文 | English | 日本語 |
     | --- | --- | --- | --- | --- |
-    | preset.AFK.label | 挂机任务 | - | - | - |
-    | preset.AFK.description | 适合挂机长时间进行的任务 | - | - | - |
-    | preset.FullDaily.label | 全套日常 | - | - | - |
-    | preset.FullDaily.description | 做一遍全套日常任务 | - | - | - |
-    | preset.QuickDaily.label | 快速日常 | - | - | - |
-    | preset.QuickDaily.description | 几个常见的日常任务，更节约时间 | - | - | - |
-    | preset.RealtimeAssist.label | 实时辅助 | - | - | - |
-    | preset.RealtimeAssist.description | 实时辅助功能，你的开荒跑图助手！ | - | - | - |
+    | preset.AFK.label | 挂机任务 | 掛機任務 | AFK Tasks | 放置タスク |
+    | preset.AFK.description | 适合挂机长时间进行的任务 | 適合掛機長時間進行的任務 | Suitable for long-running AFK tasks | 長時間の放置プレイに適したタスク |
+    | preset.FullDaily.label | 全套日常 | 全套日常 | Full Daily | フルデイリー |
+    | preset.FullDaily.description | 做一遍全套日常任务 | 做一遍全套日常任務 | Complete a full set of daily tasks | 全てのデイリータスクを一通り実行します |
+    | preset.QuickDaily.label | 快速日常 | 快速日常 | Quick Daily | クイックデイリー |
+    | preset.QuickDaily.description | 几个常见的日常任务，更节约时间 | 幾個常見的日常任務，更節約時間 | Common daily tasks, more time-efficient | よく使うデイリータスク、より時間を節約 |
+    | preset.RealtimeAssist.label | 实时辅助 | 實時輔助 | Real-time Assistance | リアルタイム支援 |
+    | preset.RealtimeAssist.description | 实时辅助功能，你的开荒跑图助手！ | 實時輔助功能，你的開荒跑圖助手！ | Real-time assistance feature, your exploration helper! | リアルタイム支援機能、あなたの探索アシスタント！ |
 
 - :+ MaaNTE 任务名称
 
     | 键 | 简体中文 | 繁体中文 | English | 日本語 |
     | --- | --- | --- | --- | --- |
-    | task_claim_rewards_label | 领取奖励 | - | - | - |
-    | task_realtime_label | 实时辅助 | - | - | - |
-    | task_sound_dodge_label | 音频闪避 | - | - | - |
-    | task_autofscroll_label | 快速拾取 | - | - | - |
-    | task_withdraw_money_label | 领取一咖舍收益 | - | - | - |
-    | task_furniture_label | 家具领取 | - | - | - |
-    | task_make_coffee_label | 自动做咖啡 | - | - | - |
-    | task_pink_paw_heist_label | 粉爪大劫案 | - | - | - |
-    | task_fish_label | 钓鱼任务 | - | - | - |
-    | task_fish_new_label | 钓鱼任务（新） | - | - | - |
-    | task_tetris_label | 泯除方块 | - | - | - |
-    | task_rhythm_label | 超强音 | - | - | - |
+    | task_claim_rewards_label | 领取奖励 | 領取獎勵 | - | - |
+    | task_realtime_label | 实时辅助 | 實時輔助 | - | - |
+    | task_sound_dodge_label | 音频闪避 | 音頻閃避 | - | - |
+    | task_autofscroll_label | 快速拾取 | 快速拾取 | - | - |
+    | task_withdraw_money_label | 领取一咖舍收益 | 領取一咖舍收益 | - | - |
+    | task_furniture_label | 家具领取 | 家具領取 | - | - |
+    | task_make_coffee_label | 自动做咖啡 | 自動做咖啡 | - | - |
+    | - | 粉爪大劫案 | - | - | - |
+    | task_fish_label | 钓鱼任务 | 釣魚任務 | - | - |
+    | task_fish_new_label | 钓鱼任务（新） | 釣魚任務（新） | - | - |
+    | task_tetris_label | 泯除方块 | 泯除方塊 | - | - |
+    | task_rhythm_label | 超强音 | 超強音 | - | - |
     | task_auto_piano_label | 自动弹琴 | - | - | - |
-    | task_touch_label | 抚摸 | - | - | - |
-    | task_fountain_label | 喷泉打卡 | - | - | - |
+    | task_touch_label | 抚摸 | 撫摸 | - | - |
+    | task_fountain_label | 喷泉打卡 | 噴泉打卡 | - | - |
+    | task_auto_drive_dataset_recorder_label | 自动驾驶数据集收集 | 自動駕駛資料集收集 | - | - |
 
 - MaaNTE 任务描述
 
@@ -79,7 +80,6 @@ title: 翻译术语表
     | task_withdraw_money_desc | 自动领取一咖舍收益，支持根据风向标自动替换商品 | - | - | - |
     | task_furniture_desc | 依次识别并领取三个已知的家具（仓鼠球、棉棉、破损的木箱）。注：不保证能领取新放置的家具。 | - | - | - |
     | task_make_coffee_desc | 在选择关卡页面开始任务，需要带上娜娜莉并将都市技能点到3级。 | - | - | - |
-    | task_pink_paw_heist_desc | - | - | - | - |
     | task_fish_desc | - | - | - | - |
     | task_fish_new_desc | 重构的钓鱼功能。理论上目前能无限钓。鱼饵不足时自动购买或切换万能鱼饵，鱼鳞币不足时自动卖鱼。 | - | - | - |
     | task_tetris_desc | 该任务功能中游戏内棋盘完全由内部AI自主维护，而非获取屏幕图像，在运行该任务时请不要对游戏画面进行操作，以免AI决策与实际游戏状态不符 | - | - | - |
