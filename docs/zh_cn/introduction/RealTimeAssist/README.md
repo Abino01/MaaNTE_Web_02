@@ -1,5 +1,7 @@
 ---
 title: 实时辅助
+dir:
+  order: 2
 index: true
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: 都市闲趣
+dir:
+  order: 4
 index: true
 ---
 
