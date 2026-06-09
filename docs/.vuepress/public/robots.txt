@@ -1,0 +1,12 @@
+# robots.txt for https://maante.org
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://maante.org/sitemap.xml
+
+# Crawl-delay (optional, adjust if needed)
+Crawl-delay: 1
+
+# Block specific paths if needed (currently none)
+# Disallow: /private/
