@@ -63,6 +63,36 @@ export default defineUserConfig({
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+
+    // AI Search Optimization
+    ['meta', { name: 'article:publisher', content: 'MaaNTE Team' }],
+    ['meta', { name: 'article:author', content: 'MaaNTE Team' }],
+    ['meta', { property: 'article:published_time', content: '2024-01-01' }],
+    ['meta', { property: 'article:modified_time', content: new Date().toISOString() }],
+    ['meta', { property: 'article:section', content: 'Documentation' }],
+    ['meta', { property: 'article:tag', content: 'MaaNTE,MAA,异环,自动化,游戏辅助' }],
+
+    // Semantic Web / Schema.org for AI
+    ['meta', { property: 'og:see_also', content: 'https://github.com/1bananachicken/MaaNTE' }],
+    ['meta', { name: 'application-name', content: 'MaaNTE' }],
+    ['meta', { name: 'mobile-web-app-capable', content: 'yes' }],
+
+    // Citation & Reference (for AI to cite)
+    ['meta', { name: 'citation_title', content: 'MaaNTE Documentation' }],
+    ['meta', { name: 'citation_author', content: 'MaaNTE Team' }],
+    ['meta', { name: 'citation_publication_date', content: '2024/01/01' }],
+    ['meta', { name: 'citation_online_date', content: new Date().toISOString().split('T')[0] }],
+    ['meta', { name: 'DC.title', content: 'MaaNTE - MAA 异环小助手' }],
+    ['meta', { name: 'DC.creator', content: 'MaaNTE Team' }],
+    ['meta', { name: 'DC.subject', content: '游戏自动化,异环,MaaFramework,开源工具' }],
+    ['meta', { name: 'DC.description', content: 'MaaNTE | MAA 异环小助手 — 由 MaaFramework 强力驱动的《异环》自动化辅助工具' }],
+    ['meta', { name: 'DC.publisher', content: 'MaaNTE Team' }],
+    ['meta', { name: 'DC.type', content: 'Documentation' }],
+    ['meta', { name: 'DC.format', content: 'text/html' }],
+    ['meta', { name: 'DC.language', content: 'zh-CN' }],
+
+    // Structured Data Link
+    ['link', { rel: 'alternate', type: 'application/ld+json', href: '/schema.json' }],
   ],
 
   bundler: viteBundler(),
