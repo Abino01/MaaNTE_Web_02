@@ -1,10 +1,10 @@
 ---
-title: 翻译术语表
+title: 翻譯術語表
 ---
 
 ::: warning 注意
 
-本页面正在编辑中，还有大量内容待补充。
+本頁面正在編輯中，還有大量內容有待補充。
 
 :::
 
@@ -16,17 +16,17 @@ title: 翻译术语表
 
 ::: collapse
 
-- :+ MaaNTE 控制器名称
+- :+ MaaNTE 控制器名稱
 
-    | 键 | 简体中文 | 繁体中文 | English | 日本語 |
+    | 键 | 简体中文 | 繁體中文 | English | 日本語 |
     | --- | --- | --- | --- | --- |
     | controller_default_label | 桌面端-默认 | 桌面端-默認 | Win32 - Default | デスクトップ - デフォルト |
     | controller_front_label | 桌面端-前台 | 桌面端-前台 | Win32 - Front | デスクトップ - フォアグラウンド |
     | controller_background_label | 桌面端-后台 | 桌面端-後台 | Win32 - Background | デスクトップ - バックグラウンド |
 
-- :+ MaaNTE 任务分类
+- :+ MaaNTE 任務分類
 
-    | 键 | 简体中文 | 繁体中文 | English | 日本語 |
+    | 键 | 简体中文 | 繁體中文 | English | 日本語 |
     | --- | --- | --- | --- | --- |
     | group.Daily.label | 日常任务 | 日常任務 | Daily | 日常タスク |
     | group.RealTimeAssist.label | 实时辅助 | 實時輔助 | RealTimeAssist | リアルタイム支援 |
@@ -35,9 +35,9 @@ title: 翻译术语表
     | - | 其它功能 | - | others | - |
     | group.DatasetCollection.label | 数据收集 | 數據集收集 | DatasetCollection | データセットコレクション |
 
-- MaaNTE 任务预设
+- MaaNTE 任務預設
 
-    | 键 | 简体中文 | 繁体中文 | English | 日本語 |
+    | 键 | 简体中文 | 繁體中文 | English | 日本語 |
     | --- | --- | --- | --- | --- |
     | preset.AFK.label | 挂机任务 | 掛機任務 | AFK Tasks | 放置タスク |
     | preset.AFK.description | 适合挂机长时间进行的任务 | 適合掛機長時間進行的任務 | Suitable for long-running AFK tasks | 長時間の放置プレイに適したタスク |
@@ -48,9 +48,9 @@ title: 翻译术语表
     | preset.RealtimeAssist.label | 实时辅助 | 實時輔助 | Real-time Assistance | リアルタイム支援 |
     | preset.RealtimeAssist.description | 实时辅助功能，你的开荒跑图助手！ | 實時輔助功能，你的開荒跑圖助手！ | Real-time assistance feature, your exploration helper! | リアルタイム支援機能、あなたの探索アシスタント！ |
 
-- :+ MaaNTE 任务名称
+- :+ MaaNTE 任務名稱
 
-    | 键 | 简体中文 | 繁体中文 | English | 日本語 |
+    | 键 | 简体中文 | 繁體中文 | English | 日本語 |
     | --- | --- | --- | --- | --- |
     | task_claim_rewards_label | 领取奖励 | 領取獎勵 | - | - |
     | task_realtime_label | 实时辅助 | 實時輔助 | - | - |
@@ -69,9 +69,9 @@ title: 翻译术语表
     | task_fountain_label | 喷泉打卡 | 噴泉打卡 | - | - |
     | task_auto_drive_dataset_recorder_label | 自动驾驶数据集收集 | 自動駕駛資料集收集 | - | - |
 
-- MaaNTE 任务描述
+- MaaNTE 任務描述
 
-    | 键 | 简体中文 | 繁体中文 | English | 日本語 |
+    | 键 | 简体中文 | 繁體中文 | English | 日本語 |
     | --- | --- | --- | --- | --- |
     | task_claim_rewards_desc | 自动领取活跃度/环期赏令的奖励。 | - | - | - |
     | task_realtime_desc | 实时辅助小工具 | - | - | - |
@@ -89,9 +89,9 @@ title: 翻译术语表
     | task_fountain_desc | 识别并点击喷泉打卡按钮。 | - | - | - |
     | task_auto_drive_dataset_recorder_desc | 开始此任务前确保小地图已设置好目的地，默认录制时长为 60 秒，每秒采样 2 次。 | - | - | - |
 
-- MaaNTE 任务详情
+- MaaNTE 任務詳情
 
-    | 键 | 简体中文 | 繁体中文 | English | 日本語 |
+    | 键 | 简体中文 | 繁體中文 | English | 日本語 |
     | --- | --- | --- | --- | --- |
     | task_claim_rewards_option_activity | 领取活跃度奖励 | - | - | - |
     | task_claim_rewards_option_battle_pass | 领取环期赏令奖励 | - | - | - |
