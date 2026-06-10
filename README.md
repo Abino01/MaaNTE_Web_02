@@ -5,12 +5,6 @@
 ## 本地开发 
 
 ```bash
-# 同步文档（首次需要）
-# Windows
-powershell -ExecutionPolicy Bypass -File tools/sync-docs.ps1
-# Linux/macOS
-bash tools/sync-docs.sh
-
 # 安装依赖
 pnpm install
 
