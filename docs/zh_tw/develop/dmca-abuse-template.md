@@ -1,32 +1,32 @@
-# GitHub DMCA / Abuse 提报模板（AGPL-3.0）
+# GitHub DMCA / Abuse 提報模板（AGPL-3.0）
 
-用于针对仿冒仓库、搬运仓库、带毒二进制仓库进行快速提报。
+用於針對仿冒倉庫、搬運倉庫、帶毒二進位倉庫進行快速提報。
 
-适用对象：
-- 我方为版权方（或版权方授权代表）
-- 原项目采用 AGPL-3.0
-- 对方仓库存在未合规分发、伪装发布、恶意样本风险
+適用對象：
+- 我方為版權方（或版權方授權代表）
+- 原項目採用 AGPL-3.0
+- 對方倉庫存在未合規發放、偽裝發布、惡意樣本風險
 
 ## 官方入口
 
-- DMCA（版权移除）：<https://github.com/contact/dmca>
-- Abuse（滥用/恶意分发）：<https://support.github.com/contact/report-abuse?category=report-abuse&report=other&report_type=unspecified>
+- DMCA（版權移除）：<https://github.com/contact/dmca>
+- Abuse（濫用/惡意分發）：<https://support.github.com/contact/report-abuse?category=report-abuse&report=other&report_type=unspecified>
 
-建议两条都提：`DMCA` 处理版权，`Abuse` 处理安全风险。
+建議兩條都提：`DMCA` 處理版權，`Abuse` 處理安全風險。
 
-## 提报前准备清单
+## 提報前準備清單
 
-1. 原仓库 URL（官方仓）
-2. 被举报仓库 URL（侵权仓）
-3. 侵权样本下载 URL（Release 链接）
-4. 样本哈希（SHA256）
-5. 检测结论（如 `QVM.Gen.196650`）与检测报告文件
-6. AGPL-3.0 违反点（源码提供、修改说明、许可声明等）
-7. 联系方式（姓名、邮箱、地址、电话）
+1.原倉庫 URL（官方倉）
+2. 被檢舉倉庫 URL（侵權倉）
+3. 侵權行為範本下載 URL（Release 連結）
+4. 樣本哈希（SHA256）
+5. 檢測結論（如 `QVM.Gen.196650`）與檢測報告文件
+6. AGPL-3.0 違反點（源碼提供、修改說明、許可聲明等）
+7. 聯絡方式（姓名、信箱、地址、電話）
 
-## DMCA 表单逐项模板
+## DMCA 表單逐項模板
 
-以下字段按 GitHub 表单常见问题顺序整理，可直接复制。
+以下欄位依 GitHub 表單常見問題順序整理，可直接複製。
 
 ### Are you the copyright holder or authorized...?
 
@@ -34,7 +34,7 @@
 Yes, I am the copyright holder.
 ```
 
-如为代理：
+如為代理：
 
 ```text
 I am authorized to act on behalf of the copyright owner.
@@ -61,7 +61,7 @@ https://docs.maante.org
 
 ### Entire repository or specific files?
 
-整仓侵权时使用：
+整倉侵權時使用：
 
 ```text
 Based on the above, I confirm that the entire contents of the repository are infringing.
@@ -81,13 +81,13 @@ No. This notice is based on copyright/license infringement (AGPL-3.0 non-complia
 
 ### Forks 字段
 
-- 未逐个核查时：
+- 未逐次核查時：
 
 ```text
 None at this time. I am currently reporting only the parent repository. If infringing forks are identified, they will be submitted separately.
 ```
 
-- 仅当 fork 网络超过 100 且你确实抽样核查后，才使用 “all or most forks are infringing” 语句。
+- 只在 fork 網路超過 100 且你確實抽樣核查後，才使用 “all or most forks are infringing” 語句。
 
 ### Is the work licensed under an open source license?
 
@@ -97,8 +97,8 @@ Yes.
 
 ### Which license?
 
-优先选择 `GNU Affero General Public License v3.0 (AGPL-3.0)`。  
-若表单下拉没有 AGPL，选择最接近项并在后续描述中明确写 `AGPL-3.0`。
+優先選擇 `GNU Affero General Public License v3.0 (AGPL-3.0)`。
+若表單下拉沒有 AGPL，選擇最接近項目並在後續描述中明確寫 `AGPL-3.0`。
 
 ### How do you believe the license is being violated?
 
@@ -130,9 +130,9 @@ Only public contact information is known:
 I do not have verified private contact details (email/phone/address).
 ```
 
-## Abuse Report 附加模板（带毒产物）
+## Abuse Report 附加模板（含毒產物）
 
-用于强调“发布产物存在恶意风险”，建议和 DMCA 同时提交。
+用於強調“發布產物存在惡意風險”，建議和 DMCA 同時提交。
 
 ```text
 The repository release artifact appears malicious based on security testing.
@@ -143,16 +143,16 @@ Please review and take action under GitHub’s Active Malware/Abuse policies.
 中文版可用：
 
 ```text
-仓库产物存在安全风险。我们对该仓库发布的可执行文件进行了检测，样本 SHA256 为 <sha256>，被安全引擎检出为：QVM.Gen.196650（恶意程序泛型检测）。请 GitHub 按 Active Malware/Abuse 政策复核并处置相关发布内容。
+倉庫產物存在安全風險。我們對該倉庫發布的可執行檔進行了檢測，樣本 SHA256 為 <sha256>，被安全引擎檢出為：QVM.Gen.196650（惡意程式泛型檢測）。請 GitHub 依 Active Malware/Abuse 政策覆核並處置相關發佈內容。
 ```
 
-## 归档建议
+## 歸檔建議
 
-每次提报后，建议在内部记录：
-- 提报时间（UTC+8）
-- 目标仓库 URL
-- 样本 SHA256
-- 工单编号（GitHub 返回）
-- 当前状态（submitted / follow-up / resolved）
+每次提報後，建議在內部記錄：
+- 提報時間（UTC+8）
+- 目標倉庫 URL
+- 樣本 SHA256
+- 工單編號（GitHub 回傳）
+- 目前狀態（submitted / follow-up / resolved）
 
-这份模板可直接复制到新案件，按 `<...>` 占位符替换即可。
+這份範本可直接複製到新案件，按 `<...>` 佔位符替換即可。
