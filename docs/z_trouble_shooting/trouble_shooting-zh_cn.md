@@ -6,7 +6,7 @@
 
 #### 弹窗提示To run this application, you must install .NET
 
-- 前往[下载 .NET 10.0](https://dotnet.microsoft.com/zh-cn/download/dotnet/10.0) 并安装 `.NET 10.0 Desktop Runtime` （.NET 桌面运行时）。
+- 前往[下载 .NET 10.0](https://dotnet.microsoft.com/zh-tw/download/dotnet/thank-you/sdk-10.0.300-windows-x64-installer) 并安装 `.NET 10.0 Desktop Runtime` （.NET 桌面运行时）。
 
 ### 无法连接窗口
 
@@ -97,7 +97,7 @@
 
 ### 自动做咖啡
 
-本质上是自动锤所有人
+- 本质上是自动锤所有人
 
 #### 没有收益/没有全连击
 
