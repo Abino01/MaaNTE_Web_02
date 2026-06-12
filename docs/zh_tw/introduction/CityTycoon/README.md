@@ -5,7 +5,7 @@ dir:
 index: true
 ---
 
-都市大亨玩法相关任务。
+都市大亨玩法相關任務。
 
-- [家具领取](Furniture.md)
-- [领取一咖舍收益](WithdrawMoney.md)
+- [家具領取](Furniture.md)
+- [領取一咖舍收益](WithdrawMoney.md)
