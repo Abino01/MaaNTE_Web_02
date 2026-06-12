@@ -1,7 +1,7 @@
 ---
 title: 日常任務
 dir:
-    order: 1
+  order: 1
 index: true
 ---
 

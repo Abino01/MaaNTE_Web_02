@@ -1,7 +1,7 @@
 ---
 title: 即時輔助
 dir:
- order: 2
+  order: 2
 index: true
 ---
 

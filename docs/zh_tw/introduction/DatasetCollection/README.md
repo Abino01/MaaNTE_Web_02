@@ -1,7 +1,7 @@
 ---
 title: 資料收集
 dir:
- order: 6
+  order: 6
 index: true
 ---
 
