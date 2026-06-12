@@ -105,6 +105,7 @@ config:
       - title: 自動閃避與反擊
         details: 基於音訊辨識的即時閃避系統。監聽遊戲音效，自動觸發閃避和反擊操作，讓戰鬥更從容
         icon: fa7-solid:bolt
+        link: introduction\RealTimeAssist\SoundDodge.md
       - title: 實時輔助
         details: 自動拾取、自動跳過劇情、自動點擊傳送，減少繁瑣操作，讓遊戲體驗更流暢自然
         icon: fa7-solid:clock
@@ -112,15 +113,19 @@ config:
       - title: 粉爪大劫案
         details: 自動刷取「粉紅爪大劫案」，輕鬆獲得獎勵，解放你的雙手
         icon: streamline-plump:pet-paw-solid
+        link: introduction\HethereauHobbies\PinkPawHeist.md
       - title: 獎勵領取
         details: 自動領取每日獎勵
         icon: fa7-solid:gift
+        link: introduction\Daily\ClaimRewards.md
       - title: 自動做咖啡
         details: 進行「店長特供」玩法，自動製作咖啡，全自動完成都會體力刷取方斯
         icon: mdi:coffee-maker-check-outline
+        link: introduction\HethereauHobbies\MakeCoffee.md
       - title: 超強音
         details: 自動演奏音遊「超強音」，支援自動選曲、連續演奏和幀率調節。輕鬆獲得音遊獎勵
         icon: fa7-solid:music
+        link: introduction\HethereauHobbies\Rhythm.md
       - title: 更多功能
         details: 自動彈琴、快速拾取、領取獎勵、取錢… 更多自動化功能持續更新中
         icon: heroicons:ellipsis-horizontal-circle-16-solid
