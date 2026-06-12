@@ -34,7 +34,7 @@ export function genThemeLocales(): LocaleConfig<ThemeLocaleData> {
       },
       zh_tw: {
         copyright: 'MaaNTE 為專案開源，以 <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPL-3.0</a> 協議發布。 ',
-        message: '本軟體與《異環》的開發商及發行商無關聯。 ',
+        message: '本軟體與《異環》的開發商及發行商無任何關聯。 ',
         
       },
       en_us: {
