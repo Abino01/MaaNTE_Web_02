@@ -72,7 +72,7 @@ Reading is only required when performing the corresponding task.
 |------|------|
 | 待補充 | 待補充 |
 
-## 快速跳轉
+## Quick jump
 
 | What I want to do ? | Where should I look ? |
 |-----------|---------|
