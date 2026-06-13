@@ -4,7 +4,7 @@
 
 ### 无法启动
 
-#### 弹窗提示To run this application, you must install .NET
+#### 弹窗提示 `To run this application, you must install .NET`
 
 - 前往[下载 .NET 10.0](https://dotnet.microsoft.com/zh-tw/download/dotnet/thank-you/sdk-10.0.300-windows-x64-installer) 并安装 `.NET 10.0 Desktop Runtime` （.NET 桌面运行时）。
 

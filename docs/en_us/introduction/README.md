@@ -74,7 +74,7 @@ Currently, these functions are categorized as follows:
 
 詳細安裝與設定說明請查看上游倉庫的 [README](https://github.com/1bananachicken/MaaNTE)。
 
-遇到問題？請參考 [問題排查](/en_us/問題排查.html)。
+遇到問題？請參考 [問題排查](trouble_shooting-en_us.md)。
 
 ### 為文檔貢獻內容
 
