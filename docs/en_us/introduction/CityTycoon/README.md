@@ -1,11 +1,11 @@
 ---
-title: 都市大亨
+title: City Tycoon
 dir:
   order: 3
 index: true
 ---
 
-都市大亨玩法相關任務。
+City Tycoon gameplay-related tasks.
 
-- [家具領取](Furniture.md)
-- [領取一咖舍收益](WithdrawMoney.md)
+- [Get furniture rewards](Furniture.md)
+- [Claim earnings from The Cafe by Origen](WithdrawMoney.md)

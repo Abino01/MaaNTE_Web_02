@@ -1,12 +1,12 @@
 ---
-title: 日常任務
+title: Daily tasks
 dir:
   order: 1
 index: true
 ---
 
-日常任務相關內容。
+Content related to daily tasks.
 
-- [領取獎勵](ClaimRewards.md)
-- [家具領取](../CityTycoon/Furniture.md)
-- [領取一咖舍收益](../CityTycoon/WithdrawMoney.md)
+- [Claim Rewards](ClaimRewards.md)
+- [Get furniture rewards](../CityTycoon/Furniture.md)
+- [Claim earnings from The Cafe by Origen](../CityTycoon/WithdrawMoney.md)

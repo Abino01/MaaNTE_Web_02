@@ -1,30 +1,31 @@
 ---
-title: 領取一咖舍收益
+title: Claim earnings from The Cafe by Origen
 ---
 
-## 簡介
+## introduction
 
-自動領取一咖舍收益，支援根據風向標自動替換商品。
+Automatically collect earnings from The Cafe by Origen and support automatic product replacement based on Fashion Center.
 
-::: info 控制器
+::: info controller
 
-- [+] 桌面端-預設
-- [x] 桌面端-前台
-- [ ] 桌面端-後台
+- [+] Desktop - Preset
+- [x] Desktop - Frontend
+- [ ] Desktop - Backend
 
 :::
 
 ::: steps
 
-1. 自動補貨
+1. Automatic replenishment
 
-   開啟時會自動進行補貨。解鎖了遊戲內的自動補貨功能之後建議使用遊戲內提供的，關掉本功能即可。
+   Enabling this feature will automatically restock items in the game. Once the automatic restock feature is unlocked, it is recommended to use it and disable this feature.
 
-2. 替換商品
+2. Replacement products
 
    ::: warning
-    開啟該功能需要前台控制器
+    Enabling this feature requires a foreground controller.
    :::
 
-         會以風向標後的收益自動上架商品，但不會考慮技能。
+   - Products will be automatically listed based on revenue generated from the Fashion Center, but skills will not be considered.
+
 :::

@@ -1,22 +1,22 @@
 ---
-title: 自動駕駛資料集收集
+title: Autonomous driving dataset collection
 ---
 
-::: info 控制器
+::: info info controller
 
-- [x] 桌面端-默認
-- [x] 桌面端-前台
-- [x] 桌面端-後台
+- [x] Desktop - Preset
+- [x] Desktop - Frontend
+- [x] Desktop - Backend
 
 :::
 
 ::: steps
 
-1. 輸出目錄
+1. Output directory
 
-    相對路徑。
+    To Relative path.
 
-2. 錄製時長
+2. Recording duration
 
-3. 錄製延遲
+3. Recording delay
 :::

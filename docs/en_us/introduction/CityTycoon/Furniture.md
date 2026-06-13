@@ -1,21 +1,21 @@
 ---
-title: 家具領取
+title: Get furniture rewards
 ---
 
-領取異象家具的獎勵。
+Receive Anomaly furniture as a reward.
 
-::: table title="異象家具支援情況" hl-cells="success:(2,1)(2,5)(2,6);danger:(2,2)(2,3)(2,4)"
+::: table title="Support status for Anomaly furniture" hl-cells="success:(2,1)(2,5)(2,6);danger:(2,2)(2,3)(2,4)"
 
-| 棉棉 | 瑪門 | 老舊郵筒 | 金邊管家 | 破損的木箱 | 倉鼠球 |
+| Fluff | Blind Mammon | 93/4 Mailbox | Gilded Butler | Intact Crate | Hamster Ball |
 | --- | --- | --- | --- | --- | --- |
-| 支援 | 不支援 | 不支援 | 不支援 | 支援 | 支援 |
+| Support | Not support | Not support | Not support | Support | Support |
 
 :::
 
-::: table title="房產支持情況" hl-cells="success:(2,1)(2,2)(2,3)(2,4)(2,6);warning:(2,5)"
+::: table title="Property support" hl-cells="success:(2,1)(2,2)(2,3)(2,4)(2,6);warning:(2,5)"
 
-| 維納公寓 | 伊登公寓 | 天景空館 | 金都雲邸 | 天駿公閣 | 峰林別墅 |
+| Wiener Apartments | Eden Apartments | Skyview Halls | Golden Capital | Pegasus Residence | Fenglin Villa |
 | --- | --- | --- | --- | --- | --- |
-| 支持 | 支持 | 支持 | 支持 | 國服支持 | 支持 |
+| Support | Support | Support | Support | Support only : zh_cn | Support |
 
 :::

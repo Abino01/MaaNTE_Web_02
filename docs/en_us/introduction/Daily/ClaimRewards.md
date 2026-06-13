@@ -1,26 +1,26 @@
 ---
-title: 領取獎勵
+title: Claim Rewards
 ---
 
-## 簡介
+## Introduction
 
-自動領取活躍度獎勵以及環期賞令的獎勵。
+Automatically claim rewards from Daily Activity and Circle Bounty.
 
-::: info 控制器
+::: info controller
 
-- [ ] 桌面端-默認
-- [x] 桌面端-前台
-- [ ] 桌面端-後台
+- [ ] Desktop - Preset
+- [x] Desktop - Frontend
+- [ ] Desktop - Backend
 
 :::
 
 ::: steps
 
-1. 領取活躍度獎勵
+1. Claim Daily Activity Rewards
 
-    按 F1 開啟活動介面，切換至第二頁，領取活躍度積分和活躍度獎勵。
+    Press F1 to open the event interface, switch to the second page, and claim your activity points and activity rewards.
 
-2. 領取環期賞令獎勵
+2. Claim Circle Bounty rewards
 
-    按 F2 開啟環期賞令介面，切換至第二頁，領取通行證經驗及修行獎勵。
+    Press F2 to open the Circle Bounty interface, switch to the second page, and claim your pass experience and training rewards.
 :::
