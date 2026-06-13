@@ -1,34 +1,34 @@
 ---
-title: 自動彈琴
+title: Auto play piano
 ---
 
-## 簡介
+## Introduction
 
-讀取 MIDI 譜面並向目前目標視窗發送鍵盤演奏。
+Read the MIDI score and send keyboard playing to the current target window.
 
-::: info 控制器
+::: info controller
 
-- [x] 桌面端-默認
-- [x] 桌面端-前台
-- [x] 桌面端-後台
+- [x] Desktop - Preset
+- [x] Desktop - Frontend
+- [x] Desktop - Backend
 
 :::
 
-MIDI 樂譜
+MIDI score
 
 ::: steps
 
-1. MIDI 譜面自訂路徑
+1. MIDI score Custom Path
 
-    相對路徑會從專案根目錄解析，例如 `songs/example.mid` ；也可以填入絕對路徑。
+    Relative paths will be resolved from the project root directory, for example, `songs/example.mid`; absolute paths can also be entered.
     
-      - 舉例來說:例如文件位置在  `C:\Users\download\` 且文件名稱(含副檔名)為 `song.mid` ( `song.midi` )，將完整路徑粘貼(例如 `C:\Users\download\song.mid` )至輸出目錄。
+      - For example: if the file is located in `C:\Users\download\` and the file name (including the extension) is `song.mid` (`song.midi`), paste the full path (e.g., `C:\Users\download\song.mid`) into the output directory.
 
-2. 播放速度
+2. Playing speed
 
-   在選擇撥放速度時，默認速度為 `1.0` ，可以手動輸入速度倍率調節，更改後在執行中不可變更。
+   When selecting the playback speed, the default speed is `1.0`. Can manually enter the speed multiplier to adjust it, but once changed, it cannot be changed during execution.
 
-3. 轉調
+3. modulation
 
-   在選擇轉調時，默認調性為 `0` ，如果要升小半節音輸入 `+1` ，如果要升一個大調輸入 `+12` ，(降調亦是如此)以此類推...。
+   When selecting a key, the default key is `0`. To raise the key by a minor semitone, type `+1`. To raise the key by a major semitone, type `+12`. (The same applies to lowering the key.)
 :::

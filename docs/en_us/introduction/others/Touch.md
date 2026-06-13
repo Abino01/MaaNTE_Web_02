@@ -1,34 +1,34 @@
 ---
-title: 撫摸
+title: Caress
 ---
 
-## 簡介
+## Introduction
 
-偵測「撫摸」按鈕並自動執行：按F → 點選互動區域 → 按ESC
+Detect the `touch` button and execute automatically: Press `F` → Select the interactive area → Press `ESC`
 
-!!兄弟，貓不錯，摸摸。 !!
+!!   Wow ! Who`s cute kitty at here ! ! (whap-whap)   !!
 
-::: info 控制器
+::: info controller
 
-- [x] 桌面端-默認
-- [x] 桌面端-前台
-- [x] 桌面端-後台
+- [x] Desktop - Preset
+- [x] Desktop - Frontend
+- [x] Desktop - Backend
 
 :::
 
 ::: steps
 
-1. 循環次數
+1. The number of times
 
-   重複執行的次數。 
+   The number of times to repeat the execution.
 
-   !!摸100次有成就!!{.mask .click}
+   !!Touching it 100 times will bring an achievement.!!{.mask .click}
 
-2. 按F後延遲
+2. Delay after pressing F
 
-   按下F鍵後的延遲時間，以毫秒為單位。
+   The delay time after pressing the F key, in ms.
 
-3. 點擊後延遲
+3. Delay after clicking
 
-   點選互動區域後的延遲時間，以毫秒為單位。
+   The delay time after selecting an interactive area is in ms.
 :::

@@ -1,44 +1,44 @@
 ---
-title: 超強音
+title: Super Sound
 ---
 
-## 簡介
+## Introduction
 
-自動完成音遊「超強音」。需要在該玩法介面開始任務。
+Automatically complete the music game **Super Sound**. Need to start the mission in the gameplay interface.
 
-目前《迷星叫》曲目已經可以達到96%準度
+Currently, the accuracy of tracks in **Mayoiuta** has reached 96%.
 
-::: info 控制器
+::: info controller
 
-- [x] 桌面端-默認
-- [x] 桌面端-前台
-- [x] 桌面端-後台
+- [x] Desktop - Preset
+- [x] Desktop - Frontend
+- [x] Desktop - Backend
 
 :::
 
 ::: steps
 
-1. 自動選曲
+1. Automatic song selection
 
-    開啟時自動選擇演奏《迷星叫》，關閉後可自選`目標歌曲`。
+    When it turned on, it automatically selects and plays **Mayoiuta**. When it turned off, can choose your own `target song`.
 
-2. 目標歌曲
+2. Target Song
 
-    自選曲目。
+    Choose the music.
 
-3. 自動連打
+3. Automatic continuous
 
-    啟用後連續演奏指定次數，關閉則僅演奏一次。
+    When enabled, it plays continuously a specified number of times; when disabled, it plays only once.
 
-4. 連打直到活力耗盡
+4. Keep continuously until exhausted
 
-    啟用後連續演奏直到沒有足夠都市活力用於領取方斯獎勵。關閉後可設定`連打次數`。
+    When enabled, it will play continuously until there have no enough **City Stamina** and the **Circle Bounty**. When disabled, `the number of consecutive plays` can be set.
 
-5. 連打次數
+5. Automatic continuous times
 
-    循環演奏多少次。
+    Set how many times at automatic continuous.
 
-6. 目標幀率
+6. Target FPS
 
-    演奏循環的每秒幀率，建議`30`-`120`。
+    For the playback loop, a frame rate of `30-120` FPS is recommended.
 :::

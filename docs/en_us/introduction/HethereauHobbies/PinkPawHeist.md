@@ -1,5 +1,5 @@
 ---
-title: 粉爪大劫案
+title: Pink Paws Heist
 ---
 
 ## 簡介

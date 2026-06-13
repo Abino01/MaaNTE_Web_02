@@ -1,24 +1,24 @@
 ---
-title: 自動做咖啡
+title: Automatic coffee maker
 ---
 
-## 簡介
+## Introduction
 
-在`1-1`錘人。需要上任帶娜娜莉。
+In level `1-1`, use hammer attack enemies. You'll need a previous player with **Nanally**.
 
-!!自動錘人。 !!
+!!Auto attack enemies!!
 
-::: info 控制器
+::: info controller
 
-- [ ] 桌面端-默認
-- [x] 桌面端-前台
-- [ ] 桌面端-後台
+- [ ] Desktop - Preset
+- [x] Desktop - Frontend
+- [ ] Desktop - Backend
 
 :::
 
 ::: steps
 
-1. 製作次數
+1. The number of times it is executed
 
-    重複執行的次數。
+    The number of times to repeat the execution.
 :::

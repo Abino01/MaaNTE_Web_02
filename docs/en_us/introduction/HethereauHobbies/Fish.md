@@ -1,87 +1,88 @@
 ---
-title: 釣魚任務
+title: Fishing Quest
 ---
 
-## 簡介
+## Introduction
 
-自動執行釣魚任務的掛機功能。包含[舊版](#task1)和[新版](#task2)個任務入口。
+The automatically perform fishing tasks.Includes both the [old version](#task1) and [new version](#task2) task entry points.
 
-## 釣魚任務{#task1}
+## Fishing Quest (old) {#task1}
 
-自動循環執行釣魚：拋竿、等待上鉤、收桿，支援自動賣魚、自動買魚餌。
+Automatically cycles through fishing: casting, waiting for a bite, and reeling in the fish; supports automatic fish selling and automatic bait purchase.
 
-::: info 控制器
+::: info controller
 
-- [x] 桌面端-默認
-- [x] 桌面端-前台
-- [x] 桌面端-後台
+- [x] Desktop - Preset
+- [x] Desktop - Frontend
+- [x] Desktop - Backend
 
 :::
 
 ::: steps
 
-1. 無限循環
+1. Infinite loop
 
-    啟用時會隱藏忽略 `循環次數` 設定。
+    When enabled, the `loop count` setting will be hidden and ignored.
 
-2. 循環次數
+2. Loop count
 
-    本次執行要進行多少輪次該任務。 
+    How many rounds of this task will be performed in this execution.
 
-    填入的內容需滿足 `^\d+$` ，即 **任意數字** 。
+    The content to be filled in must satisfy `^\d+$`, that is, **any number**.
 
-3. 每次釣魚數量
+3. Number of fish caught each time
 
-   每個循環釣多少次魚，建議數值為`99`。 
+   The recommended number of times to fish per cycle is `99`.
 
-    ::: info 舉個例子
-    當`循環次數`為`5`，`每次釣魚數量`為`99`時，會在釣魚`99*5=495`次後停止。 
+    ::: info For example
+    When `the number of cycles` is `5` and `the number of fish caught each time` is `99`, the game will stop after fishing `99*5=495` times.
     :::
 
-4. 自動賣魚
+4. Automatic fish selling
 
-   執行一個輪次的釣魚後是否進行賣出魚簍內**全部**魚的操作。
+   After completing a round of fishing, should the operator sell **all the fish in the fish** basket.
 
-5. 自動買魚餌
+5. Automatic fish bait purchase
 
-   是否在執行一個輪次的釣魚後購買`99`個魚餌。 
+   Should or not for purchase `99` baits after completing a round of fishing.
 
-6. 魚餌辨識閾值
+6. Fish bait recognition threshold
 
-   購買魚餌時對辨識魚餌影像的置信度要求，越高越嚴格。 
+   The higher the confidence level required for identifying bait images when purchasing fish bait, the stricter the requirements.
 
-   無法辨識點擊魚餌位置時可以嘗試調低該數值。
+   If cannot identify the location of the clicked bait, try lowering this value.
 :::
 
-## 釣魚任務（新）{#task2}
+## Fishing Quest（new）{#task2}
 
-自動循環執行釣魚，預設會一直循環執行。
+The auto fishing will be executed automatically in a loop, and by default it will run continuously.
 
 > [!WARNING]
-> 仍無法直接處理被月卡打斷的跨夜釣魚，可以嘗試設定定時任務來繼續釣魚，實際效果無法保證。
-> 釣魚功能只自動買魚餌和自動賣魚會搶佔滑鼠。
+> There's still no way to directly handle overnight fishing interrupted by the monthly pass. You can try setting up a timed task to continue fishing, but the actual effect cannot be guaranteed.
+>
+> The fishing function's automatic bait purchase and automatic fish selling functions will take up mouse time.
 
-::: info 控制器
+::: info controller
 
-- [+] 桌面端-預設
-- [x] 桌面端-前台
-- [+] 桌面端-後台
+- [+] Desktop - Preset
+- [x] Desktop - Frontend
+- [+] Desktop - Backend
 
 :::
 
 ::: steps
 
-1. 自動賣魚
+1. Automatic fish selling
 
-   是否在**魚鱗幣不足時**自動出售背包中的魚。
+   When should or not for the fish in your inventory be sold automatically when there are **no enough Scale Coins**.
 
-2. 自動買魚餌
+2. Automatic fish bait purchase
 
-   是否在辨識到**魚餌不足時**購買`99`個魚餌。 
+   Should or not for purchase `99` fish baits if have **not enough fish bait**.
 
-3. 魚餌辨識閾值
+3. Fish bait recognition threshold
 
-   購買魚餌時對辨識魚餌影像的置信度要求，越高越嚴格。 
+   The higher the confidence level required for identifying bait images when purchasing fish bait, the stricter the requirements.
 
-   - 無法辨識點擊魚餌位置時可以嘗試調低該數值。
+   - If cannot identify the location of the clicked bait, try lowering this value.
 :::

@@ -1,15 +1,15 @@
 ---
-title: 音訊閃避
+title: Audio dodging
 ---
 
-## 簡介
+## Introduction
 
-基於音訊辨識的自動閃避與反擊。
+`Automatic dodging and counterattack based` on `audio recognition`.
 
-::: info 控制器
+::: info controller
 
-- [ ] 桌面端-默認
-- [x] 桌面端-前台
-- [ ] 桌面端-後台
+- [ ] Desktop - Preset
+- [x] Desktop - Frontend
+- [ ] Desktop - Backend
 
 :::

@@ -1,17 +1,17 @@
 ---
-title: 噴泉打卡
+title: Go and have a check at wishing pool
 ---
 
-## 簡介
+## Introduction
 
-自動投幣許願。
+Auto get a wish
 
-需要在噴泉前開始任務。 !!等有自動尋路了再說吧!!
+Need stead before at `Nacupeda's Pool`, it will start at around the pool.  !!NOT USE UNTIL HAVE AUTO RUNNING ON ROAD!!
 
-::: info 控制器
+::: info controller
 
-- [x] 桌面端-默認
-- [x] 桌面端-前台
-- [x] 桌面端-後台
+- [x] Desktop - Preset
+- [x] Desktop - Frontend
+- [x] Desktop - Backend
 
 :::

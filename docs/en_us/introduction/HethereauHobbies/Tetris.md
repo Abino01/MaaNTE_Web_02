@@ -1,34 +1,34 @@
 ---
-title: 泯除方塊
+title: Tetrominoes
 ---
 
-## 簡介
+## Introduction
 
-自動玩俄羅斯方塊。需要在該玩法介面開始任務。
+Automatically play Tetris.Need to start at the task through this gameplay interface.
 
-::: info 控制器
+::: info controller
 
-- [x] 桌面端-默認
-- [x] 桌面端-前台
-- [x] 桌面端-後台
+- [x] Desktop - Preset
+- [x] Desktop - Frontend
+- [x] Desktop - Backend
 
 :::
 
 ::: steps
 
-1. 自動連打
+1. Automatic continuous typing
 
-    啟用後自動重複多輪，關閉則僅進行一輪
+    When enabled, it will automatically repeat multiple rounds; when disabled, it will only perform one round.
 
-2. 消耗所有活力
+2. Consume all **City Stamina**
 
-    啟用後連續遊玩直到沒有足夠都市活力用於領取方斯獎勵。關閉後可設定`連打輪數`。
+    When enabled, play continuously until you run out of **City Stamina** to claim rewards. When disabled, can set the `Number of rounds`.
 
-3. 連打輪數
+3. Number of rounds
 
-    連續遊玩多少次。
+    How many times consecutively can visit the site.
 
-4. 允許速降
+4. Allowed quickly descent
 
-    啟用後方塊平移/旋轉結束後自動按下空白鍵快速下落。
+    When enabled, the block will automatically fall quickly after its translation/rotation ends by pressing the `space` bar.
 :::
