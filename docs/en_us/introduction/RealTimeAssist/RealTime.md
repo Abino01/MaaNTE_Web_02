@@ -1,66 +1,66 @@
 ---
-title: 即時輔助
+title: Real-time assistance
 ---
 
-## 簡介
+## controller
 
-輔助類功能，會**一直運作**直到手動終止。
+Accessibility features will **continue to run** until manually terminated.
 
-需要使用前台控制器。 !!誰會在後台的時候用到這個東西啊！ !!{.mask .hover}
+Need to use `Desktop - Frontend` ! ! Who would use this in the background ? ! ! !{.mask .hover}
 
 ::: warning
 
-執行本任務前，請務必在 MaaNTE 的設定中設定好`結束任務快速鍵`並開啟`全域快速鍵`。
+Before performing this task, please make sure to set the `End Task Hotkey` and enable `Global Hotkey` in MaaNTE's settings.
 
 :::
 
-::: info 控制器
+::: info controller
 
-- [ ] 桌面端-默認
-- [x] 桌面端-前台
-- [ ] 桌面端-後台
+- [ ] Desktop - Preset
+- [x] Desktop - Frontend
+- [ ] Desktop - Backend
 
 :::
 
 ::: steps
 
-1. 檢測間隔
+1. Detection interval
 
-   每輪偵測之間等待的時間，單位為毫秒。一般情況下無需改動。
+   The waiting time between each round of detection is in ms. Generally, no changes are needed.
 
-2. 自動拾取
+2. Automatic Pickup
 
-   偵測到可拾取的東西時按F拾取。 !!俺拾嘞!!{.mask .hover}
+   Press `F` to pick up when an item is detected. !!俺拾嘞!!{.mask .hover}
 
     ::: warning
 
-    識別的是小手圖標，所以說有些雖然不是地上的東西但是用了這個圖標的交互也會被按F。 
+    It recognizes the little hand icon, so even if something isn't on the ground, interacting with this icon will still trigger the `F` key.
 
-    !!管你這那的，先拿了再說!!{.mask .hover}
+    ! ! Never mind the others, just take this first! ! ! {.mask .hover}
     :::
 
-3. 自動傳送
+3. Automatic delivery
 
-   處於地圖介面時，會在你**選取傳送點**時自動點選「傳送」按鈕。 
+   When are in the map interface, the **Teleport** button will be automatically selected when you select a `teleport` point.
 
-     - 目前支援下列傳送點：
+     - The following `teleportation points` are currently supported:
 
-       - “維特海默塔”
-       - “ReroRero電話亭”
+       - “Wertheimer Tower”
+       - “ReroRero Phone Booth”
 
-4. 自動跳過劇情
+4. Automatically skip the plot
 
-   當處於可以跳過的劇情時，自動點擊跳過按鈕。 
+   When a scene is skippable, automatically click the skip button.
 
-     - 自動勾選“今日不再提示”
+     - Automatically select `Do not remind me again today`.
 
-       - 在跳過劇情彈窗中，自動勾選“今日不再提示”，避免每次彈出確認。 
+       - In the skip story pop-up window, automatically check `Do not remind me again today` to avoid popping up a confirmation every time.
 
-     - 自動跳過劇情概述
+     - Automatically skip plot summary
 
-       - 在彈出劇情概述對話框時自動點選「確認」跳過。 
+       - When the plot summary dialog box pops up, automatically select `OK` to skip.
 
-    - 自動跳過重要劇情提示
+    - Automatically skip important plot hints
 
-      - 在彈出重要劇情提示對話框時自動點選「確認」跳過。 
+      - When an important plot hint dialogue box appears, automatically select `OK` to skip it.
 :::

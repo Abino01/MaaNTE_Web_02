@@ -1,17 +1,17 @@
 ---
-title: 快速拾取
+title: Quick Pickup
 ---
 
-## 簡介
+## Introduction
 
-開啟後將一直`F`+`滾輪`極速拾取（按住F觸發）。
+Once enabled, it will continuously use `F` + `scroll wheel` for extremely fast pickup (press and hold F to trigger).
 
-::: info 控制器
+::: info controller
 
-- [x] 桌面端-默認
-- [x] 桌面端-前台
-- [x] 桌面端-後台
+- [x] Desktop - Preset
+- [x] Desktop - Frontend
+- [x] Desktop - Backend
 
 :::
 
-該任務無可配置項。
+This task has no configurable options.

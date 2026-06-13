@@ -1,12 +1,12 @@
 ---
-title: 即時輔助
+title: Real-time assistance
 dir:
   order: 2
 index: true
 ---
 
-即時輔助類功能，通常來說需要前台控制器。
+Real-time assistance features typically require a front-end controller.
 
-- [即時輔助](RealTime.md)：通用的輔助功能，包含自動拾取、跳過劇情、自動傳送等功能。
-- [音訊閃避](SoundDodge.md)：基於音訊辨識的自動閃避與反擊。
-- [快速拾取](AutoFScroll.md)
+- [Real-time assistance](RealTime.md)：General accessibility features include auto-pickup, skipping storylines, and auto-teleportation.
+- [Audio dodging](SoundDodge.md)：`Automatic dodging and counterattack based` on `audio recognition`.
+- [Quick Pickup](AutoFScroll.md)

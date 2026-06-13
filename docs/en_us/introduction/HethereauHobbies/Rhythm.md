@@ -42,3 +42,4 @@ Currently, the accuracy of tracks in **Mayoiuta** has reached 96%.
 
     For the playback loop, a frame rate of `30-120` FPS is recommended.
 :::
+    

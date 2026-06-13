@@ -2,141 +2,141 @@
 title: Pink Paws Heist
 ---
 
-## 簡介
+## Introduction
 
-自動刷取粉爪大劫案。
+Automatically scraping for Pink Paws Heist.
 
-這個任務需要在小吱身邊開始（即保證螢幕上存在小吱的互動按鈕）。
+This task needs to be started next to `Chiz` (make sure there is an interaction button for `Chiz` on the screen).
 
 ::: warning
 
-執行本任務前，請務必在 MaaNTE 的設定中設定好`結束任務快速鍵`並開啟`全域快速鍵`。
+Before performing this task, please make sure to set the `End Task Hotkey` and enable `Global Hotkey` in MaaNTE's settings.
 
 :::
 
 ::: tip
 
-執行本任務前，請在遊戲的設定中關閉`移動鏡頭修正`功能。
+Before performing this task, please disable the `Camera Correction` function in the game settings.
 
 :::
 
-::: info 控制器
+::: info controller
 
-- [ ] 桌面端-默認
-- [x] 桌面端-前台
-- [ ] 桌面端-後台
+- [ ] Desktop - Preset
+- [x] Desktop - Frontend
+- [ ] Desktop - Backend
 
 :::
 
 ::: steps
 
-1. 無限循環
+1. Infinite loop
 
-   啟用後任務將無限循環，直到手動停止。啟用時會隱藏忽略 `循環次數` 設定。
+   When enabled, the task will loop indefinitely until manually stopped. Enabling this setting will hide the `loop count` setting.
 
-   預設開啟，我們也推薦你開啟該功能。
+   This feature is enabled by default, and we recommend that you enable it as well.
 
-2. 循環次數
+2. Cycle count
 
-    本次執行要進行多少次該任務。
+    How many times will this task be performed in this execution.
 
-    填入的內容需要滿足**任意正數** 。
+    The content to be filled in must satisfy **any positive number**.
 
-3. 地圖方案
+3. Map Scheme
 
-    選擇合適的方案。
+    Choose the appropriate solution.
 
-    不同方案一般對配隊的要求不同，請依描述配置好編隊。 MaaNTE 並不會更改你的配隊。
+    Different schemes generally have different requirements for team composition. Please configure the team according to the description. MaaNTE will not change your team composition.
 
-   ::: info 注意
-   不同方案可能由不同作者編寫，具體的配置項也不同。
+   ::: info Advertence
+   Different solutions may be written by different authors, and the specific configuration items may also differ.
    :::
 
-## 方案
+## PLAN
 
-::: info 說明
-下列方案相關數據是在使用推薦配隊情況下測得的，僅代表其在開發者設備上的運作狀況。數據僅供參考，不保證在任意設備及任意情況下的數據。
+::: info Illustrate
+The data below was measured using the recommended team composition and represents its performance only on the developer's device. This data is for reference only and is not guaranteed to perform on all devices or under all conditions.
 :::
 
-::: table title="相關資料演算法" hl-cells="tip:(1,2)(1,4)(1,5)(2,1)(2,3)(3,1)(3,3);success:(1,6)(1,7)(1,8)(1,9)(2,6)(2,7)(2,8)(2,9)(3,6)(3,7)(3,8)(3,9)" max-content
+::: table title="Related data and algorithms" hl-cells="tip:(1,2)(1,4)(1,5)(2,1)(2,3)(3,1)(3,3);success:(1,6)(1,7)(1,8)(1,9)(2,6)(2,7)(2,8)(2,9)(3,6)(3,7)(3,8)(3,9)" max-content
 
-|  | 數值 |  | 場均收益 | 平均收益 | 原始資料 | $\text{記錄時間}$ | 耗時 | $\text{總耗時}$ |
+|  | Values |  | Every average return | Total average return | Raw data | $\text{Counttime}$ | Runtime | $\text{Total runtime}$ |
 | --- | :---: | --- | :---: | :---: | --- | :---: | --- | :---: |
-| 平均每場耗時 | $\frac{\text{總耗時}}{\text{總局數}}$ | 方斯 | $\frac{\text{總方斯收益}}{\text{成功撤離局數}}$ | $\frac{\text{總方斯收益}}{\text{總耗時}}$ | 成功 | $\text{成功撤離局數}$ | 方斯 | $\text{總方斯收益}$ |
-| 撤離成功率 | $\frac{\text{成功撤離局數}}{\text{總局數}}$ | 粉爪幣 | $\frac{\text{總粉爪幣收益}}{\text{成功撤離局數}}$ | $\frac{\text{總粉爪幣收益}}{\text{總耗時}}$ | 失敗 | $\text{失敗撤離局數}$ | 粉爪幣 | $\text{總粉爪幣收益}$ |
+| Average times return | $\frac{\text{Total time}}{\text{Total rate}}$ | Fons | $\frac{\text{Total Fons}}{\text{Evacuation success rate}}$ | $\frac{\text{Total Fons}}{\text{Total time}}$ | Pass | $\text{Evacuation success rate}$ | Fons | $\text{Total Fons}$ |
+| Evacuation success rate | $\frac{\text{Evacuation success rate}}{\text{Total rate}}$ | Paw-Paw Coin | $\frac{\text{Total Paw-Paw Coin}}{\text{Evacuation success rate}}$ | $\frac{\text{Total Paw-Paw Coin}}{\text{Total time}}$ | Fail | $\text{Evacuation fail rate}$ | Paw-Paw Coin | $\text{Total Paw-Paw Coin}$ |
 
 :::
 
-### 方案一
+### Plan 1st.
 
-::: table title="配隊要求"
+::: table title="Pairing requirements"
 
 | - | 1 | 2 | 3 | 4 |
 | --- | --- | --- | --- | --- |
-| 要求 | - | - | 薄荷 | - |
-| 推薦 | 娜娜莉 | - | 薄荷 | 早霧 |
+| Requirements | - | - | Mint | - |
+| Recommend | Nanally | - | Mint | Sakiri |
 
 :::
 
-此方案為早期可行性測試用方案，效率極低，不建議選擇。
+This plan is for early feasibility testing and is extremely inefficient; it is not recommended.
 
-::: table title="相關資料" hl-cells="tip:(1,2)(1,4)(1,5)(2,1)(2,3)(3,1)(3,3)"
+::: table title="Related materials" hl-cells="tip:(1,2)(1,4)(1,5)(2,1)(2,3)(3,1)(3,3)"
 
-| | 數值 | | 場均收益 | 平均收益 |
+| | Values | | Every average return | Total average return |
 | --- | :---: | --- | :---: | :---: |
-| 平均每場耗時 | - | 方斯 | - | - |
-| 撤離成功率 | 30% | 粉爪幣 | 1 | - |
+| Average times return | - | Fons | - | - |
+| Evacuation success rate | 30% | Paw-Paw Coin | 1 | - |
 
 :::
 
-### 方案二
+### Plan 2nd.
 
-需要將畫質設為`性能`，幀率設為`60`或`120`。
+Need to set the graphics quality to `Performance` and set the FPS to `60` or `120`.
 
-::: table title="配隊要求"
+::: table title="Pairing requirements"
 
 | - | 1 | 2 | 3 | 4 |
 | --- | --- | --- | --- | --- |
-| 要求 | 娜娜莉 | - | 早霧 | 翳 |
-| 推薦 | 娜娜莉 | 安魂曲 | 早霧 | 翳 |
+| Requirements | Nanally | - | Sakiri | Skia |
+| Recommend | Nanally | Lacrimosa | Sakiri | Skia |
 
 :::
 
-::: table title="相關資料" hl-cells="tip:(1,2)(1,4)(1,5)(2,1)(2,3)(3,1)(3,3)"
+::: table title="Related materials" hl-cells="tip:(1,2)(1,4)(1,5)(2,1)(2,3)(3,1)(3,3)"
 
-|  | 數值 |  | 場均收益 | 平均收益 |
+|  | Values |  | Every average return | Total average return |
 | --- | :---: | --- | :---: | :---: |
-| 平均每場耗時 | - | 方斯 | - | - |
-| 撤離成功率 | 80% | 粉爪幣 | - | - |
+| Average times return | - | Fons | - | - |
+| Evacuation success rate | 80% | Paw-Paw Coin | - | - |
 
 :::
 
-### 方案三
+### Plan 3rd.
 
-::: info 注意
-此方案處於早期內測時期，數據隨時可能變動
+::: info Precautions
+This solution is in the early internal testing phase, and the data is subject to change at any time.
 :::
 
-::: table title="配隊要求"
+::: table title="Pairing requirements"
 
 | - | 1 | 2 | 3 | 4 |
 | --- | --- | --- | --- | --- |
-| 要求1 | 早霧 | 翳 | 薄荷 | - |
-| 推薦1 | 早霧 | 翳 | 薄荷 | 安魂曲 |
-| 要求2 | - | 潯 | 薄荷 | - |
-| 推薦2 | 早霧 | 潯 | 薄荷 | 安魂曲 |
+| Requirements-1 | Sakiri | Skia | Mint | - |
+| Recommend-1 | Sakiri | Skia | Mint | Lacrimosa |
+| Requirements-2 | - | Hotori | Mint | - |
+| Recommend-2 | Sakiri | Hotori | Mint | Lacrimosa |
 
 :::
 
-需要將畫質設為`性能`，幀率設為`60`或`120`。
+Need to set the graphics quality to `Performance` and set the FPS to `60` or `120`.
 
-**==路線時間微調==**：當實測路線仍有**固定偏差**時再微調。走過頭調小，沒走到調大。
+**==Route time fine-tuning==**：Fine-tune only if the measured route still shows a **fixed deviation**. Adjust less if you go too far, and increase if you don't reach the correct path.
 
-::: table title="相關數據" hl-cells="tip:(1,2)(1,4)(1,5)(2,1)(2,3)(3,1)(3,3);success:(1,6)(1,7)(1,8)(1,9)(2,6)(2,7)(2,8)(2,9)(3,6)(3,7)(3,8)(3,9)" max-content
+::: table title="Relevant data" hl-cells="tip:(1,2)(1,4)(1,5)(2,1)(2,3)(3,1)(3,3);success:(1,6)(1,7)(1,8)(1,9)(2,6)(2,7)(2,8)(2,9)(3,6)(3,7)(3,8)(3,9)" max-content
 
-|  | 數值 |  | 場均收益 | 平均收益 | 原始資料 | 2026-06-08 | 耗時 | $13\text{h}15\text{min}$ |
+|  | Values |  | Every average return | Total average return | Raw data | 2026-06-08 | Runtime | $13\text{h}15\text{min}$ |
 | --- | :---: | --- | :---: | :---: | --- | :---: | --- | :---: |
-| 平均每場耗時 | $7.79\text{min}$ | 方斯 | $62030$ | $5306$ | 成功 | $68$ | 方斯 | $4218010$ |
-| 撤離成功率 | $66.67\%$ | 粉爪幣 | $442$ | $38$ | 失敗 | $34$ | 粉爪幣 | $30085$ |
+| Average times return | $7.79\text{min}$ | Fons | $62030$ | $5306$ | Pass | $68$ | Fons | $4218010$ |
+| Evacuation success rate | $66.67\%$ | Paw-Paw Coin | $442$ | $38$ | Fail | $34$ | Paw-Paw Coin | $30085$ |
 
 :::

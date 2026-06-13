@@ -106,7 +106,7 @@ config:
         details: Real-time dodge system based on audio recognition. Listens for game sound effects and automatically triggers dodge and counter moves for smoother combat
         icon: fa7-solid:bolt
         link: introduction\RealTimeAssist\SoundDodge.md
-      - title: Real-Time Assistance
+      - title: Real-time assistance
         details: Auto-pickup, auto-skip cutscenes, auto-click teleport — reduce tedious actions for a smoother gameplay experience
         icon: fa7-solid:clock
         link: introduction/RealTimeAssist/RealTime.md
@@ -122,8 +122,8 @@ config:
         details: Automate the "Manager's Special" activity — make coffee and spend city stamina on Fons farming, fully automatic
         icon: mdi:coffee-maker-check-outline
         link: introduction\HethereauHobbies\MakeCoffee.md
-      - title: Super Sonic
-        details: Auto-play the "Super Sonic" rhythm game, with support for auto song selection, continuous play, and framerate adjustment. Earn rhythm game rewards effortlessly
+      - title: Super Sound
+        details: Auto-play the "Super Sound" rhythm game, with support for auto song selection, continuous play, and framerate adjustment. Earn rhythm game rewards effortlessly
         icon: fa7-solid:music
         link: introduction\HethereauHobbies\Rhythm.md
       - title: And More

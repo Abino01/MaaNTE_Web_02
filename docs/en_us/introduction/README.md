@@ -13,71 +13,71 @@ Currently, these functions are categorized as follows:
 
 | Task | Function | illustrate |
 | --- | --- | --- |
-| [領取獎勵](Daily/ClaimRewards.md) {rowspan=2} | 領取活躍度獎勵 | 自動領取日常獎勵。 {rowspan=2} |
+| [Claim Rewards](Daily/ClaimRewards.md) {rowspan=2} | 領取活躍度獎勵 | 自動領取日常獎勵。 {rowspan=2} |
 | 領取環期賞令獎勵 |
-| [家具領取](CityTycoon/Furniture.md) | 領取異象家具獎勵 | 依序識別並領取三件已知的家具（倉鼠球、棉棉、破損的木箱） |
-| [領取一咖舍收益](CityTycoon/WithdrawMoney.md) | 領取一卡舍收益 | - |
+| [Get furniture rewards](CityTycoon/Furniture.md) | 領取異象家具獎勵 | 依序識別並領取三件已知的家具（倉鼠球、棉棉、破損的木箱） |
+| [Claim earnings from The Cafe by Origen](CityTycoon/WithdrawMoney.md) | 領取一卡舍收益 | - |
 
-## 實時輔助
+## Real-time assistance
 
 | Task | Function |
 | --- | --- |
-| [實時輔助](RealTimeAssist/RealTime.md) | 通用的輔助功能，包含自動拾取、跳過劇情、自動傳送等功能。 |
-| [音訊閃避](RealTimeAssist/SoundDodge.md) | 基於音訊的自動閃避與反擊 |
-| [快速拾取](RealTimeAssist/AutoFScroll.md) | 持續按住 F 並滾動滾輪，實現快速拾取 |
+| [Real-time assistance](RealTimeAssist/RealTime.md) | Accessibility features will continue to run until manually terminated. |
+| [Auto Dodge & Counter](RealTimeAssist/SoundDodge.md) | Automatic dodging and counterattack based on audio recognition. |
+| [Quick Pickup](RealTimeAssist/AutoFScroll.md) | Once enabled, it will continuously use F + scroll wheel for extremely fast pickup (press and hold F to trigger). |
 
-## 都市大亨
+## City Tycoon
 
 | Task | Function | illustrate |
 | --- | --- | --- |
-| 一咖舍 | [領一咖舍收益](CityTycoon/WithdrawMoney.md) | 領取一咖舍收益 |
-| 房產 | [家具領取](CityTycoon/Furniture.md) | 領取異象家具獎勵 |
+| 一咖舍 | [Claim earnings from The Cafe by Origen](CityTycoon/WithdrawMoney.md) | 領取一咖舍收益 |
+| 房產 | [Get furniture rewards](CityTycoon/Furniture.md) | 領取異象家具獎勵 |
 
-## 都市閒趣
+## Hethereau Hobbies
 
 | Task | Function | illustrate |
 | --- | --- | --- |
 | 同城派送 | - | - |
 | 車輛賽事 | - | - |
-| 店長特供 | [自動做咖啡](HethereauHobbies/MakeCoffee.md) | !!自動錘人!! |
+| 店長特供 | [Automatic coffee maker](HethereauHobbies/MakeCoffee.md) | !!Auto attack enemies!! |
 | 雨燕出遊 | - | - |
-| 粉爪大劫案 | [粉爪大劫案](HethereauHobbies/PinkPawHeist.md) | 自動刷取粉爪大劫案 |
-| 海上釣客 {rowspan=2} | [釣魚任務](HethereauHobbies/Fish.md#task1) | 自動循環執行釣魚：拋竿、等待上鉤、收桿，支援自動賣魚和自動買魚餌。 |
-| [釣魚任務（新）](HethereauHobbies/Fish.md#task2) | 自動迴圈執行釣魚，預設會一直循環執行。 |
+| Pink Paws Heist | [Pink Paws Heist](HethereauHobbies/PinkPawHeist.md) | Automatically scraping for Pink Paws Heist. |
+| 海上釣客 {rowspan=2} | [Fishing Quest (old) ](HethereauHobbies/Fish.md#task1) | Automatically cycles through fishing: casting, waiting for a bite, and reeling in the fish; supports automatic fish selling and automatic bait purchase. |
+| [Fishing Quest (new) ](HethereauHobbies/Fish.md#task2) | The auto fishing will be executed automatically in a loop, and by default it will run continuously. |
 | 小小麻雀 | - | - |
-| 泯除方塊 | [泯除方塊](HethereauHobbies/Tetris.md) | 自動俄羅斯方塊 |
-| 超強音 | [超強音](HethereauHobbies/Rhythm.md) | 自動演奏音遊，支援選曲與連打 |
+| Tetrominoes | [Tetrominoes](HethereauHobbies/Tetris.md) | Automatically play Tetris. |
+| Super Sound | [Super Sound](HethereauHobbies/Rhythm.md) | 自動演奏音遊，支援選曲與連打 |
 
-## 其它功能
+## Others
 
 | Function | illustrate |
 | --- | --- |
-| [自動彈琴](others/AutoPiano.md) | 自動彈奏鋼琴，支援midi譜面。 |
-| [撫摸](others/Touch) | 一直摸小動物 |
-| [噴泉打卡](FountainCheckin.md) | 去許願池許個願吧 |
+| [Auto play piano](others/AutoPiano.md) | Auto play piano, support `.midi` file. |
+| [Caress](others/Touch) | Keep touching the small animals. |
+| [Go and have a check at wishing pool](FountainCheckin.md) | Go to the wishing pool and make a wish. |
 
-## 資料收集
+## Data collection
 
-::: info 聲明
-**資料收集**類功能用於收集開發和最佳化功能的數據，預設不會開啟。
+::: info Declaration
+The **Data collection** class is used to collect data for development and optimization of features, and is not enabled by default.
 
-該功能不會將資料上傳到網絡，需要您手動將收集的資料傳送給我們。
+This feature does not upload data to the network; you need to manually send the collected data to us.
 :::
 
 | Function | application | Collection range |
 | --- | --- | --- |
-| [自動駕駛資料集收集](DatasetCollection/AutonomousDrivingDataset) | 自動駕駛功能模型訓練 | 遊戲畫面、操作 |
+| [Autonomous driving dataset collection](DatasetCollection/AutonomousDrivingDataset) | Autonomous driving function model training | Game graphics and controls |
 
 ---
 
-## 更多內容
+## More content
 
-詳細安裝與設定說明請查看上游倉庫的 [README](https://github.com/1bananachicken/MaaNTE)。
+For detailed installation and setup instructions, please refer to the upstream repository for [README](https://github.com/1bananachicken/MaaNTE) .
 
-遇到問題？請參考 [問題排查](trouble_shooting-en_us.md)。
+Having problems? Please refer to [Trouble shooting](trouble_shooting-en_us.md) .
 
-### 為文檔貢獻內容
+### Contribute content to the document
 
-提交給 GitHub 上的倉庫 [MaaNTE-Web](https://github.com/Maa-NTE/MaaNTE-Web/) 即可。
+Submit to a repository on GitHub : [MaaNTE-Web](https://github.com/Maa-NTE/MaaNTE-Web/) .
 
-相關資料：[術語表](../translation.md)
+Related materials : [X - Translation list](../translation.md)
